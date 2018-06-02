@@ -7,21 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61A4D9BA074B65F2B418306D /* Pods_Fariqak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA81B95EA493067EAFCF2F37 /* Pods_Fariqak.framework */; };
+		928CCC1C20AC739600B56E4E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC1B20AC739600B56E4E /* Extensions.swift */; };
+		928CCC1F20AE02DC00B56E4E /* APIConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC1E20AE02DC00B56E4E /* APIConvenience.swift */; };
+		928CCC2120AE035A00B56E4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2020AE035A00B56E4E /* User.swift */; };
+		928CCC2320AE070100B56E4E /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2220AE070100B56E4E /* LoginRequest.swift */; };
+		928CCC2520AE080E00B56E4E /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2420AE080E00B56E4E /* Chat.swift */; };
+		928CCC2720AE0A6900B56E4E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2620AE0A6900B56E4E /* Message.swift */; };
+		928CCC2920AE1F1500B56E4E /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2820AE1F1500B56E4E /* Playground.swift */; };
+		928CCC2B20AE213C00B56E4E /* SearchPlaygroundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2A20AE213C00B56E4E /* SearchPlaygroundRequest.swift */; };
+		928CCC2D20AE21C200B56E4E /* UploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2C20AE21C200B56E4E /* UploadResponse.swift */; };
+		928CCC2F20AE220900B56E4E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC2E20AE220900B56E4E /* Team.swift */; };
+		928CCC3220B0AB8600B56E4E /* RemoveTeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3120B0AB8600B56E4E /* RemoveTeamMember.swift */; };
+		928CCC3420B0AE0600B56E4E /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3320B0AE0600B56E4E /* SearchRequest.swift */; };
+		928CCC3620B0AE7400B56E4E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3520B0AE7400B56E4E /* Product.swift */; };
+		928CCC3820B0B39F00B56E4E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3720B0B39F00B56E4E /* Category.swift */; };
+		928CCC3A20B0B41000B56E4E /* order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3920B0B41000B56E4E /* order.swift */; };
+		928CCC3C20B0B47400B56E4E /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3B20B0B47400B56E4E /* OrderItem.swift */; };
+		928CCC3E20B0B63700B56E4E /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3D20B0B63700B56E4E /* City.swift */; };
+		928CCC4020B0B68500B56E4E /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC3F20B0B68500B56E4E /* Reservation.swift */; };
+		928CCC4220B0C3BA00B56E4E /* StatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4120B0C3BA00B56E4E /* StatusRequest.swift */; };
+		928CCC4420B0C75F00B56E4E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4320B0C75F00B56E4E /* Notification.swift */; };
+		928CCC4620B0CB0100B56E4E /* SendNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4520B0CB0100B56E4E /* SendNotificationRequest.swift */; };
+		928CCC4820B0CB3200B56E4E /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4720B0CB3200B56E4E /* Invitation.swift */; };
+		928CCC4A20B0CE5500B56E4E /* RateProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4920B0CE5500B56E4E /* RateProductRequest.swift */; };
+		928CCC4C20B0CED300B56E4E /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4B20B0CED300B56E4E /* ContactUs.swift */; };
+		928CCC4E20B0CF3100B56E4E /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4D20B0CF3100B56E4E /* Social.swift */; };
+		928CCC5020B0D2A100B56E4E /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC4F20B0D2A100B56E4E /* APIRequests.swift */; };
+		928CCC5220B0E44300B56E4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 928CCC5120B0E44200B56E4E /* GoogleService-Info.plist */; };
+		928CCC5520B885AA00B56E4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC5420B885AA00B56E4E /* LoginViewController.swift */; };
+		928CCC5720BAD55C00B56E4E /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC5620BAD55C00B56E4E /* EmailLoginViewController.swift */; };
+		928CCC5920BADA7E00B56E4E /* RegisterIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC5820BADA7E00B56E4E /* RegisterIViewController.swift */; };
+		928CCC5D20BADAEB00B56E4E /* RegisterIITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC5C20BADAEB00B56E4E /* RegisterIITableViewController.swift */; };
+		928CCC6020BE9C0B00B56E4E /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928CCC5F20BE9C0B00B56E4E /* JSONRepresentable.swift */; };
 		92B7CDBA20A9B2AA00C05CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7CDB920A9B2AA00C05CC4 /* AppDelegate.swift */; };
-		92B7CDBC20A9B2AA00C05CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7CDBB20A9B2AA00C05CC4 /* ViewController.swift */; };
 		92B7CDBF20A9B2AA00C05CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7CDBD20A9B2AA00C05CC4 /* Main.storyboard */; };
 		92B7CDC120A9B2AC00C05CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B7CDC020A9B2AC00C05CC4 /* Assets.xcassets */; };
 		92B7CDC420A9B2AC00C05CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7CDC220A9B2AC00C05CC4 /* LaunchScreen.storyboard */; };
+		92B7CDD220A9C33A00C05CC4 /* FariqakButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7CDD120A9C33A00C05CC4 /* FariqakButton.swift */; };
+		92B7CDD820AC3D3600C05CC4 /* LanguageSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7CDD720AC3D3600C05CC4 /* LanguageSetViewController.swift */; };
+		92B7CDDB20AC4D3F00C05CC4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92B7CDDD20AC4D3F00C05CC4 /* Localizable.strings */; };
+		92B7CDE320AC4F5100C05CC4 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7CDE220AC4F5100C05CC4 /* Localizable.swift */; };
+		92B7CDEC20AC547F00C05CC4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7CDEB20AC547F00C05CC4 /* Login.storyboard */; };
+		92B7CDEE20AC54D600C05CC4 /* LanguageSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7CDED20AC54D600C05CC4 /* LanguageSet.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E6EE568B23604A87FE71382 /* Pods-Fariqak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fariqak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fariqak/Pods-Fariqak.release.xcconfig"; sourceTree = "<group>"; };
+		928CCC1B20AC739600B56E4E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		928CCC1E20AE02DC00B56E4E /* APIConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConvenience.swift; sourceTree = "<group>"; };
+		928CCC2020AE035A00B56E4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		928CCC2220AE070100B56E4E /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		928CCC2420AE080E00B56E4E /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		928CCC2620AE0A6900B56E4E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		928CCC2820AE1F1500B56E4E /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		928CCC2A20AE213C00B56E4E /* SearchPlaygroundRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaygroundRequest.swift; sourceTree = "<group>"; };
+		928CCC2C20AE21C200B56E4E /* UploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadResponse.swift; sourceTree = "<group>"; };
+		928CCC2E20AE220900B56E4E /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		928CCC3120B0AB8600B56E4E /* RemoveTeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTeamMember.swift; sourceTree = "<group>"; };
+		928CCC3320B0AE0600B56E4E /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		928CCC3520B0AE7400B56E4E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		928CCC3720B0B39F00B56E4E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		928CCC3920B0B41000B56E4E /* order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = order.swift; sourceTree = "<group>"; };
+		928CCC3B20B0B47400B56E4E /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		928CCC3D20B0B63700B56E4E /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		928CCC3F20B0B68500B56E4E /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		928CCC4120B0C3BA00B56E4E /* StatusRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRequest.swift; sourceTree = "<group>"; };
+		928CCC4320B0C75F00B56E4E /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		928CCC4520B0CB0100B56E4E /* SendNotificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNotificationRequest.swift; sourceTree = "<group>"; };
+		928CCC4720B0CB3200B56E4E /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		928CCC4920B0CE5500B56E4E /* RateProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateProductRequest.swift; sourceTree = "<group>"; };
+		928CCC4B20B0CED300B56E4E /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+		928CCC4D20B0CF3100B56E4E /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
+		928CCC4F20B0D2A100B56E4E /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		928CCC5120B0E44200B56E4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		928CCC5320B3893300B56E4E /* Fariqak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fariqak.entitlements; sourceTree = "<group>"; };
+		928CCC5420B885AA00B56E4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		928CCC5620BAD55C00B56E4E /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		928CCC5820BADA7E00B56E4E /* RegisterIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterIViewController.swift; sourceTree = "<group>"; };
+		928CCC5C20BADAEB00B56E4E /* RegisterIITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterIITableViewController.swift; sourceTree = "<group>"; };
+		928CCC5F20BE9C0B00B56E4E /* JSONRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRepresentable.swift; sourceTree = "<group>"; };
 		92B7CDB620A9B2AA00C05CC4 /* Fariqak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fariqak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B7CDB920A9B2AA00C05CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92B7CDBB20A9B2AA00C05CC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92B7CDBE20A9B2AA00C05CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92B7CDC020A9B2AC00C05CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B7CDC320A9B2AC00C05CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B7CDC520A9B2AC00C05CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B7CDD120A9C33A00C05CC4 /* FariqakButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FariqakButton.swift; sourceTree = "<group>"; };
+		92B7CDD720AC3D3600C05CC4 /* LanguageSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSetViewController.swift; sourceTree = "<group>"; };
+		92B7CDDC20AC4D3F00C05CC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92B7CDDE20AC4D7000C05CC4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		92B7CDDF20AC4D7000C05CC4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		92B7CDE020AC4D7000C05CC4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92B7CDE120AC4DD800C05CC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92B7CDE220AC4F5100C05CC4 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		92B7CDEB20AC547F00C05CC4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		92B7CDED20AC54D600C05CC4 /* LanguageSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSet.storyboard; sourceTree = "<group>"; };
+		A469AAA82C2554906155F945 /* Pods-Fariqak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fariqak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fariqak/Pods-Fariqak.debug.xcconfig"; sourceTree = "<group>"; };
+		AA81B95EA493067EAFCF2F37 /* Pods_Fariqak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fariqak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +112,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A4D9BA074B65F2B418306D /* Pods_Fariqak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B771429C4670AAE685A772D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A469AAA82C2554906155F945 /* Pods-Fariqak.debug.xcconfig */,
+				6E6EE568B23604A87FE71382 /* Pods-Fariqak.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		928CCC1D20AE01C200B56E4E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				928CCC5E20BE9BEA00B56E4E /* Protocols */,
+				928CCC1E20AE02DC00B56E4E /* APIConvenience.swift */,
+				928CCC4F20B0D2A100B56E4E /* APIRequests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		928CCC3020B0A9C300B56E4E /* Request Models */ = {
+			isa = PBXGroup;
+			children = (
+				928CCC2220AE070100B56E4E /* LoginRequest.swift */,
+				928CCC2C20AE21C200B56E4E /* UploadResponse.swift */,
+				928CCC2A20AE213C00B56E4E /* SearchPlaygroundRequest.swift */,
+				928CCC3120B0AB8600B56E4E /* RemoveTeamMember.swift */,
+				928CCC3320B0AE0600B56E4E /* SearchRequest.swift */,
+				928CCC4120B0C3BA00B56E4E /* StatusRequest.swift */,
+				928CCC4520B0CB0100B56E4E /* SendNotificationRequest.swift */,
+				928CCC4920B0CE5500B56E4E /* RateProductRequest.swift */,
+			);
+			path = "Request Models";
+			sourceTree = "<group>";
+		};
+		928CCC5E20BE9BEA00B56E4E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				928CCC5F20BE9C0B00B56E4E /* JSONRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		92B7CDAD20A9B2A900C05CC4 = {
 			isa = PBXGroup;
 			children = (
 				92B7CDB820A9B2AA00C05CC4 /* Fariqak */,
 				92B7CDB720A9B2AA00C05CC4 /* Products */,
+				5B771429C4670AAE685A772D /* Pods */,
+				E035F6F860879840F5F3851C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +182,91 @@
 		92B7CDB820A9B2AA00C05CC4 /* Fariqak */ = {
 			isa = PBXGroup;
 			children = (
+				928CCC5320B3893300B56E4E /* Fariqak.entitlements */,
+				92B7CDCB20A9BD6100C05CC4 /* Model */,
+				92B7CDCC20A9BD7600C05CC4 /* View */,
+				92B7CDCD20A9BD7E00C05CC4 /* Controller */,
 				92B7CDB920A9B2AA00C05CC4 /* AppDelegate.swift */,
-				92B7CDBB20A9B2AA00C05CC4 /* ViewController.swift */,
-				92B7CDBD20A9B2AA00C05CC4 /* Main.storyboard */,
 				92B7CDC020A9B2AC00C05CC4 /* Assets.xcassets */,
-				92B7CDC220A9B2AC00C05CC4 /* LaunchScreen.storyboard */,
 				92B7CDC520A9B2AC00C05CC4 /* Info.plist */,
+				92B7CDDD20AC4D3F00C05CC4 /* Localizable.strings */,
+				92B7CDE220AC4F5100C05CC4 /* Localizable.swift */,
+				928CCC1B20AC739600B56E4E /* Extensions.swift */,
+				928CCC5120B0E44200B56E4E /* GoogleService-Info.plist */,
 			);
 			path = Fariqak;
+			sourceTree = "<group>";
+		};
+		92B7CDCB20A9BD6100C05CC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928CCC3020B0A9C300B56E4E /* Request Models */,
+				928CCC2020AE035A00B56E4E /* User.swift */,
+				928CCC2420AE080E00B56E4E /* Chat.swift */,
+				928CCC2620AE0A6900B56E4E /* Message.swift */,
+				928CCC2820AE1F1500B56E4E /* Playground.swift */,
+				928CCC2E20AE220900B56E4E /* Team.swift */,
+				928CCC3520B0AE7400B56E4E /* Product.swift */,
+				928CCC3720B0B39F00B56E4E /* Category.swift */,
+				928CCC3920B0B41000B56E4E /* order.swift */,
+				928CCC3B20B0B47400B56E4E /* OrderItem.swift */,
+				928CCC3D20B0B63700B56E4E /* City.swift */,
+				928CCC3F20B0B68500B56E4E /* Reservation.swift */,
+				928CCC4320B0C75F00B56E4E /* Notification.swift */,
+				928CCC4720B0CB3200B56E4E /* Invitation.swift */,
+				928CCC4B20B0CED300B56E4E /* ContactUs.swift */,
+				928CCC4D20B0CF3100B56E4E /* Social.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92B7CDCC20A9BD7600C05CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B7CDD020A9C30B00C05CC4 /* Extensions */,
+				92B7CDC220A9B2AC00C05CC4 /* LaunchScreen.storyboard */,
+				92B7CDBD20A9B2AA00C05CC4 /* Main.storyboard */,
+				92B7CDEB20AC547F00C05CC4 /* Login.storyboard */,
+				92B7CDED20AC54D600C05CC4 /* LanguageSet.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92B7CDCD20A9BD7E00C05CC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				928CCC1D20AE01C200B56E4E /* API */,
+				92B7CDD620AC3D1F00C05CC4 /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92B7CDD020A9C30B00C05CC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92B7CDD120A9C33A00C05CC4 /* FariqakButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92B7CDD620AC3D1F00C05CC4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				92B7CDD720AC3D3600C05CC4 /* LanguageSetViewController.swift */,
+				928CCC5420B885AA00B56E4E /* LoginViewController.swift */,
+				928CCC5620BAD55C00B56E4E /* EmailLoginViewController.swift */,
+				928CCC5820BADA7E00B56E4E /* RegisterIViewController.swift */,
+				928CCC5C20BADAEB00B56E4E /* RegisterIITableViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E035F6F860879840F5F3851C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA81B95EA493067EAFCF2F37 /* Pods_Fariqak.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92B7CDC820A9B2AC00C05CC4 /* Build configuration list for PBXNativeTarget "Fariqak" */;
 			buildPhases = (
+				8239C29E6DA7B99941CA9650 /* [CP] Check Pods Manifest.lock */,
 				92B7CDB220A9B2AA00C05CC4 /* Sources */,
 				92B7CDB320A9B2AA00C05CC4 /* Frameworks */,
 				92B7CDB420A9B2AA00C05CC4 /* Resources */,
+				0333AC6C4C2B3746F4CC995C /* [CP] Embed Pods Frameworks */,
+				62283885CB5F16710B701EEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +304,14 @@
 				TargetAttributes = {
 					92B7CDB520A9B2AA00C05CC4 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -106,6 +322,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 92B7CDAD20A9B2A900C05CC4;
 			productRefGroup = 92B7CDB720A9B2AA00C05CC4 /* Products */;
@@ -122,21 +339,153 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B7CDDB20AC4D3F00C05CC4 /* Localizable.strings in Resources */,
 				92B7CDC420A9B2AC00C05CC4 /* LaunchScreen.storyboard in Resources */,
 				92B7CDC120A9B2AC00C05CC4 /* Assets.xcassets in Resources */,
+				92B7CDEE20AC54D600C05CC4 /* LanguageSet.storyboard in Resources */,
+				92B7CDEC20AC547F00C05CC4 /* Login.storyboard in Resources */,
 				92B7CDBF20A9B2AA00C05CC4 /* Main.storyboard in Resources */,
+				928CCC5220B0E44300B56E4E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0333AC6C4C2B3746F4CC995C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fariqak/Pods-Fariqak-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DefaultsKit/DefaultsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ResponseDetective/ResponseDetective.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DefaultsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ResponseDetective.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fariqak/Pods-Fariqak-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62283885CB5F16710B701EEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fariqak/Pods-Fariqak-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fariqak/Pods-Fariqak-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8239C29E6DA7B99941CA9650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fariqak-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92B7CDB220A9B2AA00C05CC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B7CDBC20A9B2AA00C05CC4 /* ViewController.swift in Sources */,
+				928CCC1C20AC739600B56E4E /* Extensions.swift in Sources */,
+				928CCC4220B0C3BA00B56E4E /* StatusRequest.swift in Sources */,
+				928CCC4820B0CB3200B56E4E /* Invitation.swift in Sources */,
 				92B7CDBA20A9B2AA00C05CC4 /* AppDelegate.swift in Sources */,
+				928CCC2F20AE220900B56E4E /* Team.swift in Sources */,
+				92B7CDD220A9C33A00C05CC4 /* FariqakButton.swift in Sources */,
+				928CCC4620B0CB0100B56E4E /* SendNotificationRequest.swift in Sources */,
+				928CCC2920AE1F1500B56E4E /* Playground.swift in Sources */,
+				928CCC3820B0B39F00B56E4E /* Category.swift in Sources */,
+				928CCC5020B0D2A100B56E4E /* APIRequests.swift in Sources */,
+				928CCC3620B0AE7400B56E4E /* Product.swift in Sources */,
+				92B7CDE320AC4F5100C05CC4 /* Localizable.swift in Sources */,
+				928CCC2520AE080E00B56E4E /* Chat.swift in Sources */,
+				928CCC5520B885AA00B56E4E /* LoginViewController.swift in Sources */,
+				92B7CDD820AC3D3600C05CC4 /* LanguageSetViewController.swift in Sources */,
+				928CCC1F20AE02DC00B56E4E /* APIConvenience.swift in Sources */,
+				928CCC4C20B0CED300B56E4E /* ContactUs.swift in Sources */,
+				928CCC6020BE9C0B00B56E4E /* JSONRepresentable.swift in Sources */,
+				928CCC4E20B0CF3100B56E4E /* Social.swift in Sources */,
+				928CCC2B20AE213C00B56E4E /* SearchPlaygroundRequest.swift in Sources */,
+				928CCC2720AE0A6900B56E4E /* Message.swift in Sources */,
+				928CCC2120AE035A00B56E4E /* User.swift in Sources */,
+				928CCC4020B0B68500B56E4E /* Reservation.swift in Sources */,
+				928CCC2320AE070100B56E4E /* LoginRequest.swift in Sources */,
+				928CCC3420B0AE0600B56E4E /* SearchRequest.swift in Sources */,
+				928CCC2D20AE21C200B56E4E /* UploadResponse.swift in Sources */,
+				928CCC5720BAD55C00B56E4E /* EmailLoginViewController.swift in Sources */,
+				928CCC3C20B0B47400B56E4E /* OrderItem.swift in Sources */,
+				928CCC4420B0C75F00B56E4E /* Notification.swift in Sources */,
+				928CCC5D20BADAEB00B56E4E /* RegisterIITableViewController.swift in Sources */,
+				928CCC3220B0AB8600B56E4E /* RemoveTeamMember.swift in Sources */,
+				928CCC4A20B0CE5500B56E4E /* RateProductRequest.swift in Sources */,
+				928CCC5920BADA7E00B56E4E /* RegisterIViewController.swift in Sources */,
+				928CCC3A20B0B41000B56E4E /* order.swift in Sources */,
+				928CCC3E20B0B63700B56E4E /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +496,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				92B7CDBE20A9B2AA00C05CC4 /* Base */,
+				92B7CDDF20AC4D7000C05CC4 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,8 +505,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				92B7CDC320A9B2AC00C05CC4 /* Base */,
+				92B7CDDE20AC4D7000C05CC4 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92B7CDDD20AC4D3F00C05CC4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B7CDDC20AC4D3F00C05CC4 /* en */,
+				92B7CDE020AC4D7000C05CC4 /* ar */,
+				92B7CDE120AC4DD800C05CC4 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -166,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -226,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -278,11 +641,14 @@
 		};
 		92B7CDC920A9B2AC00C05CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A469AAA82C2554906155F945 /* Pods-Fariqak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fariqak/Fariqak.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZV3V89VA7Y;
 				INFOPLIST_FILE = Fariqak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +662,14 @@
 		};
 		92B7CDCA20A9B2AC00C05CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6EE568B23604A87FE71382 /* Pods-Fariqak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fariqak/Fariqak.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZV3V89VA7Y;
 				INFOPLIST_FILE = Fariqak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

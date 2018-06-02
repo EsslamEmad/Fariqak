@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pmn-di-FSq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Language Set View Controller-->
+        <scene sceneID="3Ud-ew-NKC">
+            <objects>
+                <viewController id="Pmn-di-FSq" customClass="LanguageSetViewController" customModule="Fariqak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MRn-gB-Gzw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back2" translatesAutoresizingMaskIntoConstraints="NO" id="Quy-WI-AxW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bxm-4L-rTk">
+                                <rect key="frame" x="-30" y="100" width="352.5" height="267"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YDR-jq-Avo">
+                                <rect key="frame" x="9.5" y="497" width="356" height="107"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSw-Fh-Og2" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="عربي">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBackgroungColorGradient" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="arSet:" destination="Pmn-di-FSq" eventType="touchUpInside" id="pIc-2F-huX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3K-uq-izy" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="61" width="356" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBackgroungColorGradient" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="enSet:" destination="Pmn-di-FSq" eventType="touchUpInside" id="3ar-KD-xPf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Quy-WI-AxW" firstAttribute="top" secondItem="kSm-U2-Msa" secondAttribute="top" id="9oY-bG-8ez"/>
+                            <constraint firstItem="YDR-jq-Avo" firstAttribute="centerY" secondItem="MRn-gB-Gzw" secondAttribute="centerY" multiplier="1.65" id="AQF-0H-qF8"/>
+                            <constraint firstItem="bxm-4L-rTk" firstAttribute="leading" secondItem="kSm-U2-Msa" secondAttribute="leading" constant="-30" id="FiQ-dN-F9x"/>
+                            <constraint firstItem="YDR-jq-Avo" firstAttribute="width" secondItem="MRn-gB-Gzw" secondAttribute="width" multiplier="0.95" id="N1t-Kh-3pb"/>
+                            <constraint firstItem="kSm-U2-Msa" firstAttribute="trailing" secondItem="Quy-WI-AxW" secondAttribute="trailing" id="Pbn-hB-ArM"/>
+                            <constraint firstItem="bxm-4L-rTk" firstAttribute="height" secondItem="MRn-gB-Gzw" secondAttribute="height" multiplier="0.4" id="XKU-gA-SyR"/>
+                            <constraint firstItem="bxm-4L-rTk" firstAttribute="centerY" secondItem="MRn-gB-Gzw" secondAttribute="centerY" multiplier="0.7" id="aaq-jZ-iXG"/>
+                            <constraint firstItem="YDR-jq-Avo" firstAttribute="centerX" secondItem="MRn-gB-Gzw" secondAttribute="centerX" id="ia2-A1-mFk"/>
+                            <constraint firstItem="bxm-4L-rTk" firstAttribute="width" secondItem="MRn-gB-Gzw" secondAttribute="width" multiplier="0.94" id="ja4-Bx-Qhr"/>
+                            <constraint firstItem="kSm-U2-Msa" firstAttribute="bottom" secondItem="Quy-WI-AxW" secondAttribute="bottom" id="jid-0R-gqZ"/>
+                            <constraint firstItem="Quy-WI-AxW" firstAttribute="leading" secondItem="kSm-U2-Msa" secondAttribute="leading" id="k31-fU-FyX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kSm-U2-Msa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8g-JP-5PH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back2" width="400" height="710"/>
+        <image name="logo" width="1000" height="1000"/>
+    </resources>
+</document>
