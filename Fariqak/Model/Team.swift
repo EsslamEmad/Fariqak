@@ -12,7 +12,7 @@ struct Team: Codable{
     var teamID: String?
     var players: [String] = [String]()
     var name: String?
-    var logo: String
+    var logo: String?
     var teamLeader: String?
     
     enum CodingKeys: String, CodingKey{

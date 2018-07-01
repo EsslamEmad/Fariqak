@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import PromiseKit
+import SwiftyJSON
+import SVProgressHUD
 
 class EmailLoginViewController: UIViewController {
 
@@ -18,7 +20,7 @@ class EmailLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        subscribeToKeyboardNotifications()
+        //subscribeToKeyboardNotifications()
         view.endEditing(false)
         // Do any additional setup after loading the view.
     }
@@ -29,7 +31,7 @@ class EmailLoginViewController: UIViewController {
     }
     
     @IBAction func Login(_ sender: Any){
-        
+        SVProgressHUD.show()
         Auth.auth().signIn(withEmail: email.text!, password: password.text!){(user, error) in
             
             if let error = error {
@@ -38,14 +40,39 @@ class EmailLoginViewController: UIViewController {
                 return
             }
             
-            self.showAlert(withMessage: "Signed In as \(user?.uid, user?.email)")
+           // self.showAlert(withMessage: "Signed In as \(user?.uid, user?.email)")
             firstly{
                 return API.CallApi(APIRequests.getUser(id: (user?.uid)!))
-                } .done{
-                    self.user = try! JSONDecoder().decode(User.self, from: $0)
-                    self.performMainSegue()
+                } .done{ resp in
+                    let json = try! JSON(data: resp)
+                    if json.array != nil{
+                        self.user.username = (user?.displayName) ?? "Unknown"
+                        self.user.firebaseID = (user?.uid)
+                        self.user.email = (user?.email)!
+                        self.user.phone = (user?.phoneNumber) ?? "000000000"
+                        self.user.cityID = "1"
+                        firstly{ () -> Promise<Data> in
+                            
+                            return API.CallApi(APIRequests.register(user: self.user))
+                            
+                            } .done{ [weak self] resp -> Void in
+                                
+                                self?.user = try! JSONDecoder().decode(User.self, from: resp)
+                                
+                                self?.performMainSegue()
+                                
+                            } .catch{ [weak self] error in
+                                
+                                self?.showAlert(withMessage: error.localizedDescription)
+                        }
+                    }
+                    else if json.dictionary != nil{
+                        self.user = try! JSONDecoder().decode(User.self, from: resp)
+                        self.performMainSegue()}
                 } .catch{
                     print($0.localizedDescription)
+                }.finally {
+                    SVProgressHUD.dismiss()
             }
         }
         
@@ -54,6 +81,7 @@ class EmailLoginViewController: UIViewController {
     func performMainSegue(animated: Bool = true){
         guard let window = UIApplication.shared.keyWindow else { return }
         guard let rootViewController = window.rootViewController else { return }
+        APIAuth.auth.user = self.user
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
         vc.view.frame = rootViewController.view.frame

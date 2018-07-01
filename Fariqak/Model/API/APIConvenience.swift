@@ -38,7 +38,7 @@ class API {
                     }
                     // http status code is now 200 from here on
                     
-                    guard resp["success"].stringValue == "success" || resp["status"].stringValue == "OK" else {
+                    guard resp["error"].intValue == 0  else {
                         
                         let userInfo = [NSLocalizedDescriptionKey : resp["message"].string ?? "Generic Error"]
                         seal.reject(NSError(domain: "Checking for error codes", code: 1, userInfo: userInfo))
@@ -47,8 +47,13 @@ class API {
                         
                     }
                     do {
-                        let jsonData = try resp["result"].rawData(options: .prettyPrinted)
-                        seal.fulfill(jsonData)
+                        if resp["result"].exists(){
+                            let jsonData = try resp["result"].rawData(options: .prettyPrinted)
+                            seal.fulfill(jsonData)}
+                        else{
+                            let jsonData = try resp.rawData(options: .prettyPrinted)
+                            seal.fulfill(jsonData)
+                        }
                     }
                     catch {
                         let userInfo = [NSLocalizedDescriptionKey : "Couldn't cast JSON to data"]

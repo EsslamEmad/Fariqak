@@ -6,6 +6,7 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Cosmos (16.0.0)
   - DefaultsKit (0.0.8)
   - FBSDKCoreKit (4.33.0):
     - Bolts (~> 1.7)
@@ -60,6 +61,13 @@ PODS:
   - GTMSessionFetcher/Core (1.1.15)
   - GTMSessionFetcher/Full (1.1.15):
     - GTMSessionFetcher/Core (= 1.1.15)
+  - ImageSlideshow (1.6.1):
+    - ImageSlideshow/Core (= 1.6.1)
+  - ImageSlideshow/Core (1.6.1)
+  - ImageSlideshow/Kingfisher (1.6.1):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - Kingfisher (4.7.0)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
   - Moya/Core (11.0.2):
@@ -87,6 +95,7 @@ PODS:
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
+  - Cosmos (~> 16.0)
   - DefaultsKit
   - Firebase/Auth
   - Firebase/Core
@@ -94,6 +103,9 @@ DEPENDENCIES:
   - FirebaseUI/Facebook
   - FirebaseUI/Google
   - GoogleSignIn
+  - ImageSlideshow (~> 1.6)
+  - ImageSlideshow/Kingfisher
+  - Kingfisher (~> 4.0)
   - Moya (~> 11.0)
   - PromiseKit (~> 6.0)
   - ResponseDetective (~> 1.2)
@@ -106,6 +118,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Bolts
+    - Cosmos
     - DefaultsKit
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -119,6 +132,8 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - ImageSlideshow
+    - Kingfisher
     - Moya
     - nanopb
     - PromiseKit
@@ -132,6 +147,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
   DefaultsKit: d4e4271525388e33a17ee6842f2ded78f6892bc7
   FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
   FBSDKLoginKit: 88cb456349cfb3b554427ce4f8b43729d85dfb40
@@ -145,6 +161,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   PromiseKit: a26828b0a8d5874960dfdb575b57a70790ec36f1
@@ -155,6 +173,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: d5526d59695f4bae6e739bb27bdb3352e9a83e60
+PODFILE CHECKSUM: 0e2615d4742868f5eba11b5851c76b3422bd4b3e
 
 COCOAPODS: 1.5.0

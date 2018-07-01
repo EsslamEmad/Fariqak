@@ -10,5 +10,5 @@ import Foundation
 
 
 struct SearchRequest: Codable{
-    var text: String? = ""
+    var text: String = ""
 }

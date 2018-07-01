@@ -11,10 +11,10 @@ import Moya
 
 enum APIRequests {
     
-    case login(loginRequest: LoginRequest)
+    
     case register(user: User)
-    case getUser(id: String)
-    case getUserByID(id: String)
+    case getUser(id: String) //User.uid
+    case getUserByID(id: String) //User.id
     case updateUser(user: User)
     case addPlayground(playground: Playground)
     case getPlayground(id: String)
@@ -70,8 +70,6 @@ extension APIRequests: TargetType{
     }
     var path: String{
         switch self{
-        case .login:
-            return "login"
         case .acceptTeamMember:
             return "accept_teamMember"
         case .acceptReservation(reservationID: let id):
@@ -158,16 +156,13 @@ extension APIRequests: TargetType{
             return "contactus"
         case .getSettings():
             return "get_settings"
-        default:
-            return ""
-            
         }
     }
     
     
     var method: Moya.Method{
         switch self {
-        case .login, .register, .updateUser, .addPlayground, .editPlayground, .searchPlaygrounds, .upload, .addTeam, .editTeam, .removeTeamMember, .searchTeams, .searchUsers, .saveOrder, .addReservation, .acceptReservation, .addInvitation, .sendNotification, .rateProduct, .ratePlayground, .contactUs:
+        case .register, .updateUser, .addPlayground, .editPlayground, .searchPlaygrounds, .upload, .addTeam, .editTeam, .removeTeamMember, .searchTeams, .searchUsers, .saveOrder, .addReservation, .acceptReservation, .addInvitation, .sendNotification, .rateProduct, .ratePlayground, .contactUs:
             return .post
         default:
             return .get
@@ -178,24 +173,21 @@ extension APIRequests: TargetType{
     var task: Task{
         switch self{
             
-        case .login(loginRequest: let lr):
-            return .requestParameters(parameters: ["loginReq": lr], encoding: JSONEncoding.default)
-            
         case .register(user: let user1):
             return .requestJSONEncodable(user1)
            // return .requestParameters(parameters: ["user": user1.toJSON() as Any, "username": "essess"], encoding: JSONEncoding.default)
             
         case .updateUser(user: let user):
-            return .requestParameters(parameters: ["user": user], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(user)
             
         case .addPlayground(playground: let p):
-            return .requestParameters(parameters: ["playground": p], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(p)
             
-        case .editPlayground(playground: let p):
-            return .requestParameters(parameters: ["playground": p], encoding: JSONEncoding.default)
+        case .editPlayground(id: _, playground: let p):
+            return .requestJSONEncodable(p)
             
         case .searchPlaygrounds(searchRequest: let search):
-            return .requestParameters(parameters: ["searchPlaygroundReq": search], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(search)
             
         case .upload(photo: let image):
             let data = UIImageJPEGRepresentation(image, 0.75)!
@@ -204,46 +196,46 @@ extension APIRequests: TargetType{
             return .uploadMultipart(multipartData)
             
         case .addTeam(team: let team):
-            return .requestParameters(parameters: ["team": team], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(team)
             
-        case .editTeam(team: let team):
-            return .requestParameters(parameters: ["team": team], encoding: JSONEncoding.default)
+        case .editTeam(id: _, team: let team):
+            return .requestJSONEncodable(team)
             
         case .removeTeamMember(removeRequest: let remove):
-            return .requestParameters(parameters: ["removeMemberofTeam": remove], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(remove)
             
         case .searchTeams(searchRequest: let search):
-            return .requestParameters(parameters: ["searchReq": search], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(search)
             
         case .searchUsers(searchRequest: let search):
-            return .requestParameters(parameters: ["searchReq": search], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(search)
             
         case .saveOrder(order: let order):
-            return .requestParameters(parameters: ["order": order], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(order)
             
         case .addReservation(reservation: let r):
-            return .requestParameters(parameters: ["reservation": r], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(r)
             
-        case .acceptReservation(statusRequest: let sr):
-            return .requestParameters(parameters: ["statusReq": sr], encoding: JSONEncoding.default)
+        case .acceptReservation(reservationID: _, statusRequest: let sr):
+            return .requestJSONEncodable(sr)
             
         case .addInvitation(invitation: let i):
-            return .requestParameters(parameters: ["invitation": i], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(i)
             
-        case .acceptInvitation(statusRequest: let sr):
-            return .requestParameters(parameters: ["statusReq": sr], encoding: JSONEncoding.default)
+        case .acceptInvitation(invitationID: _, statusRequest: let sr):
+            return .requestJSONEncodable(sr)
             
         case .sendNotification(notification: let n):
-            return .requestParameters(parameters: ["notification": n], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(n)
             
-        case .rateProduct(rateRequest: let rpr):
-            return .requestParameters(parameters: ["rateProductReq": rpr], encoding: JSONEncoding.default)
+        case .rateProduct(productID: _,rateRequest: let rpr):
+            return .requestJSONEncodable(rpr)
             
-        case .ratePlayground(rateRequest: let rpr):
-            return .requestParameters(parameters: ["rateProductReq": rpr], encoding: JSONEncoding.default)
+        case .ratePlayground(playgroundID: _, rateRequest: let rpr):
+            return .requestJSONEncodable(rpr)
             
         case .contactUs(content: let cu):
-            return .requestParameters(parameters: ["contactus": cu], encoding: JSONEncoding.default)
+            return .requestJSONEncodable(cu)
             
         default:
             return .requestPlain

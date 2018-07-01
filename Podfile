@@ -20,6 +20,10 @@ pod 'FirebaseUI/Google'
 pod 'FirebaseUI/Facebook'
 pod 'GoogleSignIn'
 pod 'SideMenu'
+pod 'Kingfisher', '~> 4.0'
+pod 'ImageSlideshow', '~> 1.6'
+pod "ImageSlideshow/Kingfisher"
+pod 'Cosmos', '~> 16.0'
 
 
 # Workaround for Cocoapods issue #7606

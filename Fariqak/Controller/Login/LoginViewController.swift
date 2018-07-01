@@ -16,17 +16,11 @@ import PromiseKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import SwiftyJSON
+import SVProgressHUD
 
 
-class LoginViewController: UIViewController, GIDSignInDelegate, FUIAuthDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        
-    }
-    
-    
-    
-    
-    @IBOutlet weak var signInButton: GIDSignInButton!
+class LoginViewController: UIViewController, GIDSignInUIDelegate, FUIAuthDelegate, GIDSignInDelegate {
+   
     
     let loginButtoon = FBSDKLoginButton()
     var user = User()
@@ -35,7 +29,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, FUIAuthDelegate 
         subscribeToKeyboardNotifications()
         //GIDSignIn.sharedInstance().uiDelegate = self as! GIDSignInUIDelegate
         //GIDSignIn.sharedInstance().signIn()
-
+        GIDSignIn.sharedInstance().delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -64,36 +58,37 @@ class LoginViewController: UIViewController, GIDSignInDelegate, FUIAuthDelegate 
     })
     }
     
-    
+    @IBAction func GoogleSignIn(_ sender: Any?){
+        
+            // [START setup_gid_uidelegate]
+            GIDSignIn.sharedInstance().uiDelegate = self
+            GIDSignIn.sharedInstance().signIn()
+            // [END setup_gid_uidelegate]
+        
+    }
     
     //Google Sing In
     
-  /*  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
         if let error = error {
-            // ...
+            self.showAlert(error: true, withMessage: error.localizedDescription, completion: nil)
             return
         }
         
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
-        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
-            if let error = error {
-                // ...
-                return
-            }
-            // User is signed in
-            // ...
-        }
+        firebaseLogin(credential)
     
     }
     
-    */
+    
         
     func firebaseLogin(_ credential: AuthCredential) {
             
-        
-                    Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+        SVProgressHUD.show()
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
                         
                             if let error = error {
                                 
@@ -112,6 +107,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, FUIAuthDelegate 
                                     self.user.email = (authResult?.user.email) ?? "N/A"
                                     self.user.phone = (authResult?.user.phoneNumber) ?? "000000000"
                                     self.user.cityID = "1"
+                                    self.user.photos = authResult?.user.photoURL?.absoluteString ?? ""
                                     firstly{ () -> Promise<Data> in
                                         
                                         return API.CallApi(APIRequests.register(user: self.user))
@@ -130,18 +126,23 @@ class LoginViewController: UIViewController, GIDSignInDelegate, FUIAuthDelegate 
                                 }
                                 else if json.dictionary != nil{
                                     self.user = try! JSONDecoder().decode(User.self, from: resp)
+                                    
                                     self.performMainSegue()}
                             } .catch{
                                 print($0.localizedDescription)
-                        }
-                    }
-                    
-                
+                            } .finally {
+                                SVProgressHUD.dismiss()
             }
+            }
+        
+        }
+                
+    
         
     func performMainSegue(animated: Bool = true){
         guard let window = UIApplication.shared.keyWindow else { return }
         guard let rootViewController = window.rootViewController else { return }
+        APIAuth.auth.user = self.user
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
         vc.view.frame = rootViewController.view.frame

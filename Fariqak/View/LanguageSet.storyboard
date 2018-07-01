@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back2" translatesAutoresizingMaskIntoConstraints="NO" id="Quy-WI-AxW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="bxm-4L-rTk">
                                 <rect key="frame" x="-30" y="100" width="352.5" height="267"/>
@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Quy-WI-AxW" firstAttribute="top" secondItem="kSm-U2-Msa" secondAttribute="top" id="9oY-bG-8ez"/>
+                            <constraint firstItem="Quy-WI-AxW" firstAttribute="top" secondItem="MRn-gB-Gzw" secondAttribute="top" id="9oY-bG-8ez"/>
                             <constraint firstItem="YDR-jq-Avo" firstAttribute="centerY" secondItem="MRn-gB-Gzw" secondAttribute="centerY" multiplier="1.65" id="AQF-0H-qF8"/>
                             <constraint firstItem="bxm-4L-rTk" firstAttribute="leading" secondItem="kSm-U2-Msa" secondAttribute="leading" constant="-30" id="FiQ-dN-F9x"/>
                             <constraint firstItem="YDR-jq-Avo" firstAttribute="width" secondItem="MRn-gB-Gzw" secondAttribute="width" multiplier="0.95" id="N1t-Kh-3pb"/>

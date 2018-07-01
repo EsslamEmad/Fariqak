@@ -16,7 +16,8 @@ class RegisterIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        subscribeToKeyboardNotifications()
+        //subscribeToKeyboardNotifications()
+        view.endEditing(false)
         // Do any additional setup after loading the view.
     }
 
@@ -27,7 +28,17 @@ class RegisterIViewController: UIViewController {
     
 
     @IBAction func Register(_ sender: Any){
+        
+        
         if email.text != "" , name.text != "", password.text != ""{
+            guard (email.text?.isEmail())! else{
+                self.showAlert(withMessage: "Please, enter your Email.")
+                return
+            }
+            guard (password.text?.count)! >= 6 else {
+                self.showAlert(withMessage: "Your password can not be less than 6 characters")
+                return
+            }
             self.performSegue(withIdentifier: "Register", sender: nil)
         }
     }
@@ -49,4 +60,13 @@ class RegisterIViewController: UIViewController {
     }
     */
 
+}
+
+extension String {
+    func isEmail() -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
+    }
+    
+    
 }

@@ -18,7 +18,7 @@ struct Product: Codable{
     var cityID: String?
     var lat: String?
     var lng: String?
-    var price: Int = 0
+    var price: String
     var categoryID: String?
     var language: String?
     var quantity: Int = 1
@@ -38,7 +38,7 @@ struct Product: Codable{
         case price
         case categoryID = "category_id"
         case language
-        case quantity
+        
         case photos
         case rate
     }
