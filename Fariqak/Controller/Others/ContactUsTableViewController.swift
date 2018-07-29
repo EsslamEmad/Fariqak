@@ -54,7 +54,7 @@ class ContactUsTableViewController: UITableViewController {
     
     @IBAction func didClickSend(_ sender: Any) {
         guard let name = username.text, let phone = phoneNumber.text, let email = email.text, let subject = subject.text, let message = message.text else{
-            self.showAlert(withMessage: "Please, Enter your information!")
+            self.showAlert(withMessage: NSLocalizedString("Please complete all the fields", comment: ""))
             return
         }
         contactUs.name = name
@@ -66,7 +66,7 @@ class ContactUsTableViewController: UITableViewController {
         firstly{
             return API.CallApi(APIRequests.contactUs(content: contactUs))
             }.done { resp in
-                self.showAlert(error: false, withMessage: "Your message has been sent succefully to the administration", completion: nil)
+                self.showAlert(error: false, withMessage: NSLocalizedString("Your message has been sent succefully to the administration", comment: ""), completion: nil)
             }.catch {
                 self.showAlert(withMessage: $0.localizedDescription)
             }.finally {

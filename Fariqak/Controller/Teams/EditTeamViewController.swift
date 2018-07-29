@@ -62,19 +62,20 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
     var buttonsArray = [UIButton()]
     var labelsArray = [UILabel]()
     
-    override func viewWillAppear(_ animated: Bool) {
-        SVProgressHUD.show()
-        
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SVProgressHUD.dismiss()
         playgroundImage.transform = playgroundImage.transform.rotated(by: CGFloat(M_PI_2))
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 100
         tableView.sectionHeaderHeight = 60
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         buttonsArray = [button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11]
         labelsArray = [label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11]
         
@@ -95,7 +96,6 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
         teamLogo.layer.cornerRadius = 32.0
         teamLogo.clipsToBounds = true
         fetchPlayers()
-        
     }
     
     
@@ -104,6 +104,7 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
         SVProgressHUD.show()
         for j in 0...team.players.count - 1{
             let k = j
+            if team.players[k] != ""{
             firstly{
                 return API.CallApi(APIRequests.getUserByID(id: team.players[k]))
                 }.done{
@@ -120,13 +121,24 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
                     }
                     self.labelsArray[k].text = currentplayer.username
                     self.teamPlayers[k] = self.team.players[k]
+                    
+                } .catch{
+                    self.showAlert(withMessage: $0.localizedDescription)
+                }
+                .finally {
                     self.i = self.i + 1
                     if self.i == self.team.players.count{
                         SVProgressHUD.dismiss()
                         
                     }
-                } .catch{
-                    self.showAlert(withMessage: $0.localizedDescription)
+                }
+            }
+            else {
+                self.i = self.i + 1
+                if self.i == self.team.players.count{
+                    SVProgressHUD.dismiss()
+                    
+                }
             }
             
         }
@@ -140,7 +152,7 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBAction func didClickEdit(_ sender: Any) {
         
         guard let name = teamName.text, name != "" else{
-            self.showAlert(withMessage: "Please enter the team name!")
+            self.showAlert(withMessage: NSLocalizedString("Please enter the team name!", comment: ""))
             return
         }
         SVProgressHUD.show()
@@ -150,10 +162,9 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
                 } .done{
                     let response = try! JSONDecoder().decode(UploadResponse.self, from: $0)
                     self.team.logo = response.image
-                    print("uploaded succefully")
                     self.editTeamRequest()
                 }.catch{_ in
-                    self.showAlert(withMessage: "Couldn't upload the photo")
+                    self.showAlert(withMessage: NSLocalizedString("Could not upload the photo, please try again later!", comment: ""))
                     SVProgressHUD.dismiss()
             }
         } else {
@@ -170,7 +181,7 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
         firstly{
             return API.CallApi(APIRequests.editTeam(id: team.teamID!, team: team))
             } .done{ resp in
-                self.showAlert(error: false, withMessage: "Your team is saved succefully", completion: nil)
+                self.showAlert(error: false, withMessage: NSLocalizedString("Your team is saved succefully", comment: ""), completion: nil)
                 
             } .catch{
                 self.showAlert(error: true, withMessage: $0.localizedDescription, completion: nil)
@@ -236,7 +247,7 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
         firstly{
             return API.CallApi(APIRequests.removeTeamMember(removeRequest: removeRequest))
             } .done { resp in
-                self.showAlert(error: false, withMessage: "Player has been removed succefully.", completion: nil)
+                self.showAlert(error: false, withMessage: NSLocalizedString("Player has been removed succefully.", comment: ""), completion: nil)
                 self.teamPlayers[self.i] = ""
                 self.buttonsArray[self.i].setImage(UIImage(named: "casual-t-shirt-"), for: .normal)
                 self.labelsArray[self.i].text = "\(self.i + 1)"
@@ -303,7 +314,7 @@ class EditTeamViewController: UIViewController, UIImagePickerControllerDelegate,
             present(picker, animated: true, completion: nil)
         }
         else{
-            self.showAlert(withMessage: "Application can not access photo library.")
+            self.showAlert(withMessage: NSLocalizedString("Application can not access photo library.", comment: ""))
         }
     }
     

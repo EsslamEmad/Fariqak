@@ -12,48 +12,48 @@ import Moya
 enum APIRequests {
     
     
-    case register(user: User)
-    case getUser(id: String) //User.uid
-    case getUserByID(id: String) //User.id
-    case updateUser(user: User)
-    case addPlayground(playground: Playground)
-    case getPlayground(id: String)
+    case register(user: User) //used
+    case getUser(id: String) //User.uid //used
+    case getUserByID(id: String) //User.id //used
+    case updateUser(user: User) //used
+    case addPlayground(playground: Playground) //used
+    case getPlayground(id: String) //used
     case editPlayground(id: String, playground: Playground)
-    case getPlaygrounds()
-    case getPlaygroundsInCity(cityID: String)
-    case searchPlaygrounds(searchRequest: SearchPlaygroundRequest)
-    case upload(photo: UIImage)
-    case getOwnerPlaygrounds(ownerID: String)
-    case getUserTeams(userID: String)
-    case getTeams()
-    case getTeamByID(id: String)
-    case addTeam(team: Team)
-    case editTeam(id: String, team: Team)
-    case removeTeamMember(removeRequest: RemoveTeamMember)
-    case searchTeams(searchRequest: SearchRequest)
-    case searchUsers(searchRequest: SearchRequest)
-    case getCategories()
-    case getProductsIn(categoryID: String)
-    case getProductBy(id: String)
-    case saveOrder(order: Order)
-    case getOrdersOfUser(userID: String)
-    case getOrder(id: String)
-    case getCities()
-    case addReservation(reservation: Reservation)
-    case getReservation(id: String)
-    case getReservationsOfUser(userID: String)
-    case getReservationsOfOwner(ownerID: String)
-    case acceptReservation(reservationID: String, statusRequest: StatusRequest)
+    case getPlaygrounds() //used
+    case getPlaygroundsInCity(cityID: String) //notworking
+    case searchPlaygrounds(searchRequest: SearchPlaygroundRequest) //used
+    case upload(photo: UIImage) //used
+    case getOwnerPlaygrounds(ownerID: String) //used
+    case getUserTeams(userID: String) //used
+    case getTeams() //used
+    case getTeamByID(id: String)  //used
+    case addTeam(team: Team) //used
+    case editTeam(id: String, team: Team) //used
+    case removeTeamMember(removeRequest: RemoveTeamMember) //used
+    case searchTeams(searchRequest: SearchRequest) //used
+    case searchUsers(searchRequest: SearchRequest) //used
+    case getCategories() //used
+    case getProductsIn(categoryID: String) //used
+    case getProductBy(id: String) //used
+    case saveOrder(order: Order) //used
+    case getOrdersOfUser(userID: String) //used
+    case getOrder(id: String) //used
+    case getCities() //used
+    case addReservation(reservation: Reservation) //used
+    case getReservation(id: String) //used
+    case getReservationsOfUser(userID: String) //used
+    case getReservationsOfOwner(ownerID: String) //used
+    case acceptReservation(reservationID: String, statusRequest: StatusRequest) //used
     case getNotificationsOfUser(userID: String)
-    case getCommingInvitationsOfUser(userID: String)
-    case getOutcommingInvitationsOfUser(userID: String)
-    case addInvitation(invitation: Invitation)
-    case acceptInvitation(invitationID: String, statusRequest: StatusRequest)
+    case getCommingInvitationsOfUser(userID: String) //used
+    case getOutcommingInvitationsOfUser(userID: String) //used
+    case addInvitation(invitation: Invitation) //used
+    case acceptInvitation(invitationID: String, statusRequest: StatusRequest) //used
     case sendNotification(notification: UserNotification)
     case rateProduct(productID: String, rateRequest: RateProductRequest)
     case ratePlayground(playgroundID: String, rateRequest: RateProductRequest)
-    case contactUs(content: ContactUs)
-    case getSettings()
+    case contactUs(content: ContactUs) //used
+    case getSettings() //used
     case acceptTeamMember(teamID: String, playerID: String)
     
 }
@@ -72,7 +72,7 @@ extension APIRequests: TargetType{
         switch self{
         case .acceptTeamMember:
             return "accept_teamMember"
-        case .acceptReservation(reservationID: let id):
+        case .acceptReservation(reservationID: let id, statusRequest: _):
             return "accept_reservation/\(id)"
         case .register:
             return "register"
@@ -88,7 +88,7 @@ extension APIRequests: TargetType{
             return "addPlayground"
         case .getPlayground(id: let id):
             return "playground/\(id)"
-        case .editPlayground(id: let id):
+        case .editPlayground(id: let id, playground: _):
             return "editPlayground/\(id)"
         case .getPlaygrounds():
             return "playgrounds"
@@ -108,7 +108,7 @@ extension APIRequests: TargetType{
             return "team/\(id)"
         case .addTeam:
             return "addTeam"
-        case .editTeam(id: let id):
+        case .editTeam(id: let id, team: _):
             return "editTeam/\(id)"
         case .removeTeamMember:
             return "removeMemberOfTeam"
@@ -133,7 +133,7 @@ extension APIRequests: TargetType{
         case .getReservation(id: let id):
             return "reservation/\(id)"
         case .getReservationsOfUser(userID: let id):
-            return "reservtions/\(id)"
+            return "reservations/\(id)"
         case .getReservationsOfOwner(ownerID: let id):
             return "ownerReservation/\(id)"
         case .getNotificationsOfUser(userID: let id):
@@ -144,13 +144,13 @@ extension APIRequests: TargetType{
             return "outcomming_invitation/\(id)"
         case .addInvitation:
             return "addInvitation"
-        case .acceptInvitation(invitationID: let id):
-            return "accept_Invitation/\(id)"
+        case .acceptInvitation(invitationID: let id, statusRequest: _):
+            return "accept_invitation/\(id)"
         case .sendNotification:
             return "sendNotification"
-        case .rateProduct(productID: let id):
+        case .rateProduct(productID: let id, rateRequest: _):
             return "rateProduct/\(id)"
-        case .ratePlayground(playgroundID: let id):
+        case .ratePlayground(playgroundID: let id, rateRequest: _):
             return "ratePlayground/\(id)"
         case .contactUs:
             return "contactus"

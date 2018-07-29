@@ -36,7 +36,7 @@ class CategoriesCollectionViewController: UICollectionViewController {
                 self.categories = try! JSONDecoder().decode([Category].self, from: $0)
                 self.collectionView?.reloadData()
             }.catch { error in
-                self.showAlert(withMessage: "An error has occured, please try again later!")
+                self.showAlert(withMessage: NSLocalizedString("An error has occured, please try again later!", comment: ""))
             }.finally {
                 SVProgressHUD.dismiss()
         }

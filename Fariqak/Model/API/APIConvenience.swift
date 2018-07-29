@@ -27,7 +27,7 @@ class API {
                     
                 case let .success(moyaResponse):
                     guard let resp = try? JSON(data: moyaResponse.data) else {
-                        let userInfo = [NSLocalizedDescriptionKey : "Generic1 Error"]
+                        let userInfo = [NSLocalizedDescriptionKey : "Error"]
                         seal.reject(NSError(domain: "Casting to JSON", code: 1, userInfo: userInfo))
                         return
                     }
@@ -40,7 +40,7 @@ class API {
                     
                     guard resp["error"].intValue == 0  else {
                         
-                        let userInfo = [NSLocalizedDescriptionKey : resp["message"].string ?? "Generic Error"]
+                        let userInfo = [NSLocalizedDescriptionKey : resp["message"].string ?? "Error"]
                         seal.reject(NSError(domain: "Checking for error codes", code: 1, userInfo: userInfo))
                         return
                         

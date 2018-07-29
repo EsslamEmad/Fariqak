@@ -18,6 +18,12 @@ PODS:
   - Firebase/Core (4.13.0):
     - FirebaseAnalytics (= 4.2.0)
     - FirebaseCore (= 4.0.20)
+  - Firebase/Database (4.13.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.1.5)
+  - Firebase/Messaging (4.13.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.2.0)
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -29,8 +35,18 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (4.0.20):
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (4.1.5):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.2.0):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.5)
   - FirebaseUI/Auth (4.5.5):
     - Firebase/Auth (~> 4.2)
   - FirebaseUI/Facebook (4.5.5):
@@ -39,6 +55,13 @@ PODS:
   - FirebaseUI/Google (4.5.5):
     - FirebaseUI/Auth
     - GoogleSignIn (~> 4.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
   - GoogleSignIn (4.1.2):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -47,6 +70,8 @@ PODS:
   - GoogleToolboxForMac/DebugUtils (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
@@ -68,6 +93,7 @@ PODS:
     - ImageSlideshow/Core
     - Kingfisher (> 3.0)
   - Kingfisher (4.7.0)
+  - leveldb-library (1.20)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
   - Moya/Core (11.0.2):
@@ -87,6 +113,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.2.5):
     - PromiseKit/CorePromise
+  - Protobuf (3.6.0)
   - ResponseDetective (1.2.4)
   - Result (3.2.4)
   - SideMenu (3.1.5)
@@ -99,9 +126,13 @@ DEPENDENCIES:
   - DefaultsKit
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
+  - Firebase/Messaging
   - FirebaseUI/Auth
   - FirebaseUI/Facebook
   - FirebaseUI/Google
+  - GoogleMaps
+  - GooglePlaces
   - GoogleSignIn
   - ImageSlideshow (~> 1.6)
   - ImageSlideshow/Kingfisher
@@ -126,17 +157,23 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseMessaging
     - FirebaseUI
+    - GoogleMaps
+    - GooglePlaces
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
     - ImageSlideshow
     - Kingfisher
+    - leveldb-library
     - Moya
     - nanopb
     - PromiseKit
+    - Protobuf
     - ResponseDetective
     - Result
     - SideMenu
@@ -155,17 +192,23 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseAuth: bf22cacf22c60ab454bf2636f556d8892b10b53f
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
+  FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseMessaging: 75cdb862e86c30e0913a2ff307e48d49357c5b73
   FirebaseUI: 7f149d40db1a67c459df16540256b66d8f8e8c70
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
   Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   PromiseKit: a26828b0a8d5874960dfdb575b57a70790ec36f1
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   ResponseDetective: 710b1b41903382460592a75a480440661bcadfa6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
@@ -173,6 +216,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 0e2615d4742868f5eba11b5851c76b3422bd4b3e
+PODFILE CHECKSUM: 706a880e08cc878e57754e49c58ace6d02dfde3c
 
 COCOAPODS: 1.5.0

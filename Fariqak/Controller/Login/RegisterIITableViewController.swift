@@ -57,21 +57,22 @@ class RegisterIITableViewController: UITableViewController, UIImagePickerControl
     @IBAction func Register(_ sender: Any){
         
         guard let name = nameLabel.text, nameLabel.text != "" else{
-            self.showAlert(withMessage: "Enter your full name.")
+            self.showAlert(withMessage: NSLocalizedString("Enter your full name.", comment: ""))
             return
         }
         guard let phone = phoneLabel.text, phone != "" else{
-            self.showAlert(withMessage: "Enter your phone number.")
+            self.showAlert(withMessage: NSLocalizedString("Enter your phone number.", comment: ""))
             return
         }
         guard user.cityID != "" else {
-            self.showAlert(withMessage: "Choose your city.")
+            self.showAlert(withMessage: NSLocalizedString("Choose your city.", comment: ""))
             return
         }
         
         SVProgressHUD.show()
         Auth.auth().createUser(withEmail: email, password: password){ (user, error) in
             if let error = error{
+                SVProgressHUD.dismiss()
                 self.showAlert(withMessage: error.localizedDescription)
                 return
             }
@@ -87,10 +88,9 @@ class RegisterIITableViewController: UITableViewController, UIImagePickerControl
                     } .done{
                         let response = try! JSONDecoder().decode(UploadResponse.self, from: $0)
                         self.user.photos = response.image!
-                        print("uploaded succefully")
                     
                     }.catch{_ in
-                        self.showAlert(withMessage: "Couldn't upload the photo")
+                        self.showAlert(withMessage: NSLocalizedString("Could not upload the photo, please try again later!", comment: ""))
                     } .finally{
                         self.RegisterRequest()
                 }
@@ -109,7 +109,6 @@ class RegisterIITableViewController: UITableViewController, UIImagePickerControl
                 
                 self?.user = try! JSONDecoder().decode(User.self, from: resp)
                 
-                self?.showAlert(error: false, withMessage: "WELCOME to Fariqak!")
                 self?.performMainSegue()
                 
             } .catch{ [weak self] error in
@@ -170,7 +169,7 @@ class RegisterIITableViewController: UITableViewController, UIImagePickerControl
                 present(picker, animated: true, completion: {SVProgressHUD.dismiss()})
             }
             else{
-                self.showAlert(withMessage: "Application can not access photo library.")
+                self.showAlert(withMessage: NSLocalizedString("Application can not access photo library.", comment: ""))
             }
         }
     }

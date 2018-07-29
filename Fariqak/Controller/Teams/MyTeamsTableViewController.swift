@@ -21,11 +21,11 @@ class MyTeamsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if allTeams{
-            self.title = "All Teams"
+            self.title = NSLocalizedString("All Teams", comment: "")
             fetchAllTeams()
         } else if playerTeams{
             fetchPlayerTeams()
-            self.title = "\(user.username)'s Teams"
+            self.title = "\(user.username)" + NSLocalizedString("'s Teams", comment: "")
         } else {
             fetchMyTeams()
         }

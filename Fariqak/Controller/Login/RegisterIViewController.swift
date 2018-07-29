@@ -32,11 +32,11 @@ class RegisterIViewController: UIViewController {
         
         if email.text != "" , name.text != "", password.text != ""{
             guard (email.text?.isEmail())! else{
-                self.showAlert(withMessage: "Please, enter your Email.")
+                self.showAlert(withMessage: NSLocalizedString("Please, enter your Email.", comment: ""))
                 return
             }
             guard (password.text?.count)! >= 6 else {
-                self.showAlert(withMessage: "Your password can not be less than 6 characters")
+                self.showAlert(withMessage: NSLocalizedString("Your password can not be less than 6 characters", comment: ""))
                 return
             }
             self.performSegue(withIdentifier: "Register", sender: nil)

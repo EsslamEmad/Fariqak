@@ -48,7 +48,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FUIAuthDelegat
             if let error = error {
                 self.showAlert(withMessage: error.localizedDescription)
             } else if result!.isCancelled {
-                print("FBLogin cancelled")
             } else {
                 // [START headless_facebook_auth]
                 let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
@@ -93,10 +92,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FUIAuthDelegat
                             if let error = error {
                                 
                                 self.showAlert(withMessage: error.localizedDescription)
+                                SVProgressHUD.dismiss()
                                 return
                             }
                         
                         //self.showAlert(withMessage: "Signed In as\(String(describing: authResult?.user.displayName))")
+                        //APIAuth.auth.credential = credential
                         firstly{
                             return API.CallApi(APIRequests.getUser(id: (authResult?.user.uid)!))
                             } .done{ resp in
@@ -134,6 +135,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FUIAuthDelegat
                                 SVProgressHUD.dismiss()
             }
             }
+        
         
         }
                 

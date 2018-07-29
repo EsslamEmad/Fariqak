@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 import FirebaseAuth
+import SideMenu
 
 class SideMenuTableViewController: UITableViewController {
     
@@ -18,12 +19,10 @@ class SideMenuTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //SideMenuManager.default.menuLeftNavigationController?.sideMenuDelegate = self
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
         if let image = APIAuth.auth.user?.photos, image != ""{
             if let imgurl = URL(string: image){
                 profilePicture.kf.indicatorType = .activity
@@ -41,9 +40,9 @@ class SideMenuTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func didPressSignOut(_ sender: Any?){
-        let alert = UIAlertController(title: "Sign Out", message: "Are you sure you want to sign out?", preferredStyle: .alert)
-        let yesAction = UIAlertAction(title: "Yes", style: .default, handler: {(alert: UIAlertAction!) in self.signOut()})
-        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        let alert = UIAlertController(title: NSLocalizedString("Sign Out", comment: ""), message: NSLocalizedString("Are you sure you want to sign out?", comment: ""), preferredStyle: .alert)
+        let yesAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: .default, handler: {(alert: UIAlertAction!) in self.signOut()})
+        let noAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: .cancel, handler: nil)
         alert.addAction(yesAction)
         alert.addAction(noAction)
         self.present(alert, animated: true, completion: nil)
@@ -59,6 +58,7 @@ class SideMenuTableViewController: UITableViewController {
             print ("Error signing out: %@", signOutError)
         }
     }
+    
     func performMainSegue(animated: Bool = true){
         guard let window = UIApplication.shared.keyWindow else { return }
         guard let rootViewController = window.rootViewController else { return }
@@ -72,11 +72,51 @@ class SideMenuTableViewController: UITableViewController {
         })
     }
 
+    
+    @IBAction func didPressIncomingInvitations(_ sender: UIButton!){
+        performSegue(withIdentifier: "ShowInvitations", sender: true)
+    }
+    @IBAction func didPressOutgoingInvitations(_ sender: UIButton!){
+        performSegue(withIdentifier: "ShowInvitations", sender: false)
+    }
+    
+    @IBAction func didPressLanguage(_ sender: Any) {
+        let alert = UIAlertController(title: NSLocalizedString("Language", comment: ""), message: NSLocalizedString("Choose the language!", comment: ""), preferredStyle: .actionSheet)
+        let eng = UIAlertAction(title: "English", style: .default, handler: {(UIAlertAction) -> Void in
+            guard Language.language != .english else{
+                return
+            }
+            Language.language = .english
+            self.showAlert(error: false, withMessage: "Please, restart the application to change the language!", completion: nil)
+        })
+        let ar = UIAlertAction(title: "عربي", style: .default, handler: {(UIAlertAction) -> Void in
+            guard Language.language != .arabic else {
+                return
+            }
+            Language.language = .arabic
+            self.showAlert(error: false, withMessage: "من فضلك، أعد تشغيل التطبيق لتغيير اللغة", completion: nil)
+        })
+        let cancel = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil)
+        alert.addAction(eng)
+        alert.addAction(ar)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AllTeamsSegue"{
             let destination = segue.destination as! MyTeamsTableViewController
             destination.allTeams = true
+        } else if segue.identifier == "Show My Playgrounds"{
+            let destination = segue.destination as! PlaygroundsTableViewController
+            destination.owners = true
+        } else if segue.identifier == "ShowInvitations"{
+            let destination = segue.destination as! InvitationTableViewController
+            if sender as! Bool{
+                destination.incomingInvitations = true
+            } else {
+                destination.outgoingInvitations = true
+            }
         }
     }
 
@@ -84,50 +124,17 @@ class SideMenuTableViewController: UITableViewController {
 
     
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 2 || indexPath.row == 3{
+            if APIAuth.auth.user?.type == "1"{
+                return 0
+            }
+            else {
+                return 80
+            }
+        }
+        return 80
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
  

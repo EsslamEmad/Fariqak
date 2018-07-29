@@ -8,40 +8,13 @@
 
 import UIKit
 import Foundation
-import PromiseKit
 
 class LanguageSetViewController: UIViewController {
 
     var user1 = [City]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        var user = User()
-        user.username = "ESSSSS"
-        user.email = "ess2@ess.com"
-        user.firebaseID = "QKJsn5ton0W8yQorWe7BUoGhNTk2"
-        user.id = "123412"
-        user.cityID = "1"
-        user.countryID = "1"
-        user.phone = "1231212"
-
         
-        switch UserDefaults.standard.string(forKey: "AppleLanguages"){
-        case "en": print("HEY")
-        case "ar": print("BYE")
-        default: print("WTF")
-            
-        }
-        
-        firstly{
-            return API.CallApi(APIRequests.getCities())
-            } .done{
-                print("OK")
-                self.user1 = try! JSONDecoder().decode([City].self, from: $0)
-                print("Done")
-                
-            } .catch{
-                print($0.localizedDescription)
-        }
         // Set the URL the request is being made to.
         
         
@@ -55,7 +28,7 @@ class LanguageSetViewController: UIViewController {
     
 
     @IBAction func arSet(_ sender: Any?){
-        //Language.language = Language.arabic
+        Language.language = Language.arabic
         performMainSegue()
         
     }

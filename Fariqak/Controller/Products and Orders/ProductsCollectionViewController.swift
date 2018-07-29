@@ -30,7 +30,7 @@ class ProductsCollectionViewController: UICollectionViewController {
                 self.products = try! JSONDecoder().decode([Product].self, from: $0)
                 self.collectionView?.reloadData()
             }.catch { error in
-                self.showAlert(withMessage: "An error has occured, please try again later!")
+                self.showAlert(withMessage: NSLocalizedString("An error has occured, please try again later!", comment: ""))
             }.finally {
                 SVProgressHUD.dismiss()
         }
@@ -71,13 +71,13 @@ class ProductsCollectionViewController: UICollectionViewController {
     
         // Configure the cell
         cell.layer.cornerRadius = 10.0
-        cell.price.text = "\(products[indexPath.item].price) S.R."
-        if let imgs = products[indexPath.item].photos{
+        cell.price.text = "\(products[indexPath.item].price) " + NSLocalizedString("S.R", comment: "")
+        let imgs = products[indexPath.item].photos
             let img = imgs[0]
             if let imgurl = URL(string: img){
                 cell.image.kf.indicatorType = .activity
                 cell.image.kf.setImage(with: imgurl)
-            }
+            
         }
         cell.name.text = products[indexPath.item].name
     
@@ -95,6 +95,10 @@ class ProductsCollectionViewController: UICollectionViewController {
         }
     }
 
+    @IBAction func unwindToVC(_ sender: UIStoryboardSegue) {
+        
+              
+    }
     // MARK: UICollectionViewDelegate
 
     /*

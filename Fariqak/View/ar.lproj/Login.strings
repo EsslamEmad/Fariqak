@@ -1,0 +1,45 @@
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "3OT-64-unc"; */
+"3OT-64-unc.title" = "رجوع";
+
+/* Class = "UIViewController"; title = "Sign in"; ObjectID = "BMF-C5-yJm"; */
+"BMF-C5-yJm.title" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "Don't have account yet?"; ObjectID = "CFp-tD-uNs"; */
+"CFp-tD-uNs.text" = "لا تملك حساباً بعد؟";
+
+/* Class = "UIViewController"; title = "Register"; ObjectID = "J6z-KS-XAa"; */
+"J6z-KS-XAa.title" = "تسجيل حساب جديد";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Kyo-7h-h0r"; */
+"Kyo-7h-h0r.normalTitle" = "حفظ";
+
+/* Class = "UIButton"; normalTitle = "Login via Google"; ObjectID = "Mv1-W0-ygK"; */
+"Mv1-W0-ygK.normalTitle" = "تسجيل الدخول عبر جوجل";
+
+/* Class = "UIButton"; normalTitle = "Player"; ObjectID = "R2N-N0-D4p"; */
+"R2N-N0-D4p.normalTitle" = "لاعب";
+
+/* Class = "UIButton"; normalTitle = "Login via Facebook"; ObjectID = "S0d-FS-p98"; */
+"S0d-FS-p98.normalTitle" = "تسجيل الدخول عبر الفيسبوك";
+
+/* Class = "UINavigationItem"; title = "Register"; ObjectID = "b6s-Pl-PDs"; */
+"b6s-Pl-PDs.title" = "تسجيل حساب جديد";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "cRQ-A6-cNm"; */
+"cRQ-A6-cNm.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Register here"; ObjectID = "g47-GP-R0l"; */
+"g47-GP-R0l.normalTitle" = "سجل حسابك هنا";
+
+/* Class = "UINavigationItem"; title = "Fariqak"; ObjectID = "gyh-5s-3Fc"; */
+"gyh-5s-3Fc.title" = "كون فريقك";
+
+/* Class = "UIButton"; normalTitle = "Playground Owner"; ObjectID = "mln-uQ-8wn"; */
+"mln-uQ-8wn.normalTitle" = "صاحب ملعب";
+
+/* Class = "UIButton"; normalTitle = "Login via email"; ObjectID = "vP1-bq-JmW"; */
+"vP1-bq-JmW.normalTitle" = "تسجيل الدخول عبر الإيميل";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "wlK-9Y-rqu"; */
+"wlK-9Y-rqu.normalTitle" = "تسجيل حساب جديد";

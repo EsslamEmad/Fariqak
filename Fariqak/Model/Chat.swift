@@ -11,7 +11,13 @@ import Foundation
 struct Chat: Codable{
     var id: String = ""
     var isGroup: Bool = false
-    var lastMsgTime: String = ""
+    var lastMsgTime: Int64 = 0
+    var anotherID: String = ""
     var userId: [String]
     var photoUrl: String = ""
+    var user = User()
+    
+    init() {
+        userId = [String]()
+    }
 }

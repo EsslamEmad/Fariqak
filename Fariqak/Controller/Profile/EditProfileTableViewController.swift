@@ -62,15 +62,15 @@ class EditProfileTableViewController: UITableViewController , UIImagePickerContr
     @IBAction func Update(_ sender: Any){
         
         guard let name = nameLabel.text, nameLabel.text != "" else{
-            self.showAlert(withMessage: "Enter your full name.")
+            self.showAlert(withMessage: NSLocalizedString("Enter your full name.", comment: ""))
             return
         }
         guard let phone = phoneLabel.text, phone != "" else{
-            self.showAlert(withMessage: "Enter your phone number.")
+            self.showAlert(withMessage: NSLocalizedString("Enter your phone number.", comment: ""))
             return
         }
         guard user.cityID != "" else {
-            self.showAlert(withMessage: "Choose your city.")
+            self.showAlert(withMessage: NSLocalizedString("Choose your city.", comment: ""))
             return
         }
             self.user.username = name
@@ -81,11 +81,9 @@ class EditProfileTableViewController: UITableViewController , UIImagePickerContr
                     return API.CallApi(APIRequests.upload(photo: self.imagePicker.image!))
                     } .done{
                         let response = try! JSONDecoder().decode(UploadResponse.self, from: $0)
-                        self.user.photos = response.image!
-                        print("uploaded succefully")
-                        
+                        self.user.photos = response.image!                        
                     }.catch{_ in
-                        self.showAlert(withMessage: "Couldn't upload the photo")
+                        self.showAlert(withMessage: NSLocalizedString("Could not upload the photo, please try again later!", comment: ""))
                     } .finally{
                         self.UpdateRequest()
                 }
@@ -138,7 +136,7 @@ class EditProfileTableViewController: UITableViewController , UIImagePickerContr
                 present(picker, animated: true, completion: nil)
             }
             else{
-                self.showAlert(withMessage: "Application can not access photo library.")
+                self.showAlert(withMessage: NSLocalizedString("Application can not access photo library.", comment: ""))
             }
         }
     }

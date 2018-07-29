@@ -11,7 +11,7 @@ import Foundation
 struct Reservation: Codable{
     var id: String = ""
     var teamLeaderID: String = ""
-    var status: Int = 0
+    var status: String = ""
     var date: String = ""
     var fromHour: String = ""
     var toHour: String = ""

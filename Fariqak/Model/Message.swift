@@ -9,11 +9,12 @@
 import Foundation
 
 struct Message: Codable{
+    var autoID = ""
     var text: String? = ""
     var user: String? = ""
     var type: String? = ""
     var userID: String? = ""
-    var date: Date?
+    var date: Int64 = 0
     var seen: Bool = false
     enum CodingKeys: String, CodingKey{
         case text

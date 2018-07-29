@@ -117,9 +117,7 @@ class TeamViewController: UIViewController {
     }
     
     
-    @IBAction func didPressEditTeam(_ sender: Any) {
-        
-    }
+    
     
     @IBAction func showPlayer(_ sender: UIButton) {
         let tag = sender.tag
@@ -141,7 +139,6 @@ class TeamViewController: UIViewController {
         }
         if segue.identifier == "EditSegue"{
             let destination = segue.destination as! EditTeamViewController
-            SVProgressHUD.show()
             destination.team = team
         }
     }

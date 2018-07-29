@@ -17,4 +17,8 @@ struct SearchPlaygroundRequest: Codable{
         case text
         case cityID = "city_id"
     }
+    init(text: String, cityID: String){
+        self.text = text
+        self.cityID = cityID
+    }
 }

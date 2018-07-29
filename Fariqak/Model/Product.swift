@@ -9,21 +9,21 @@
 import Foundation
 
 struct Product: Codable{
-    var code: String?
-    var name: String?
-    var details: String?
-    var itemPhoto: String?
-    var otherPhotos: String?
-    var countryID: String?
-    var cityID: String?
+    var code: String = ""
+    var name: String = ""
+    var details: String = ""
+    var itemPhoto: String? = ""
+    var otherPhotos: String? = ""
+    var countryID: String? = ""
+    var cityID: String? = ""
     var lat: String?
     var lng: String?
-    var price: String
-    var categoryID: String?
-    var language: String?
-    var quantity: Int = 1
-    var photos: [String]?
-    var rate: String?
+    var price: String = ""
+    var categoryID: String = ""
+    var language: String? = ""
+    
+    var photos = [""]
+    var rate: String = ""
     
     enum CodingKeys: String, CodingKey{
         case code
@@ -41,5 +41,10 @@ struct Product: Codable{
         
         case photos
         case rate
+    }
+    init() {
+        
+        
+        return
     }
 }

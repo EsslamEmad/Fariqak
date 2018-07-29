@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.214317266363-s5pvu95tqh8506572dqkm2durffdmt7f</string>
+				<string>com.googleusercontent.apps.214317266363-brm0crjidjk32o9gtdie3pg7gv7jp3sb</string>
 			</array>
 		</dict>
 		<dict>
@@ -47,6 +47,11 @@
 	<string>Fariqak</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Application needs to access photos library</string>
 	<key>UIBackgroundModes</key>

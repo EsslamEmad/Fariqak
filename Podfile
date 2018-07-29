@@ -18,12 +18,17 @@ pod 'Firebase/Auth'
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI/Google'
 pod 'FirebaseUI/Facebook'
+pod 'Firebase/Messaging'
+
+pod 'Firebase/Database'
 pod 'GoogleSignIn'
 pod 'SideMenu'
 pod 'Kingfisher', '~> 4.0'
 pod 'ImageSlideshow', '~> 1.6'
 pod "ImageSlideshow/Kingfisher"
 pod 'Cosmos', '~> 16.0'
+pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 
 # Workaround for Cocoapods issue #7606

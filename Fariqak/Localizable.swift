@@ -54,6 +54,7 @@ enum Language: String {
             
             //change language in the app
             //the language will be changed after restart
+            
             UserDefaults.standard.set([newValue.rawValue], forKey: appleLanguagesKey)
             UserDefaults.standard.synchronize()
             
@@ -61,16 +62,12 @@ enum Language: String {
             //this hack needs in case of languages with different semantics: leftToRight(en/uk) & rightToLeft(ar)
             UIView.appearance().semanticContentAttribute = newValue.semantic
             
-            //initialize the app from scratch
-            //show initial view controller
-            //so it seems like the is restarted
-            //NOTE: do not localize storboards
-            //After the app restart all labels/images will be set
-            //see extension String below
-            UIApplication.shared.windows[0].rootViewController = UIStoryboard(
-                name: "Login",
-                bundle: nil
-                ).instantiateInitialViewController()
+            APIAuth.auth.language = newValue.rawValue
+            
+            UIApplication.shared.keyWindow?.rootViewController?.showAlert(error: false, withMessage: NSLocalizedString("Please, restart the application to change the language!", comment: ""), completion: nil)
+            
+            
+            
         }
     }
 }

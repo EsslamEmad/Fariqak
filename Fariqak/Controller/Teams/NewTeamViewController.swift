@@ -80,7 +80,7 @@ class NewTeamViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func didClickSave(_ sender: Any) {
         
         guard let name = teamName.text, name != "" else{
-            self.showAlert(withMessage: "Please enter the team name!")
+            self.showAlert(withMessage: NSLocalizedString("Please enter the team name!", comment: ""))
             return
         }
         SVProgressHUD.show()
@@ -90,10 +90,9 @@ class NewTeamViewController: UIViewController, UIImagePickerControllerDelegate, 
                 } .done{
                     let response = try! JSONDecoder().decode(UploadResponse.self, from: $0)
                     self.team.logo = response.image
-                    print("uploaded succefully")
                     self.addTeamRequest()
                 }.catch{_ in
-                    self.showAlert(withMessage: "Couldn't upload the photo")
+                    self.showAlert(withMessage: NSLocalizedString("Could not upload the photo, please try again later!", comment: ""))
                     SVProgressHUD.dismiss()
             }
         } else {
@@ -108,7 +107,7 @@ class NewTeamViewController: UIViewController, UIImagePickerControllerDelegate, 
         firstly{
             return API.CallApi(APIRequests.addTeam(team: team))
             } .done{ resp in
-                self.showAlert(error: false, withMessage: "Your team is saved succefully", completion: nil)
+                self.showAlert(error: false, withMessage: NSLocalizedString("Your team has been saved succefully", comment: ""), completion: nil)
                 
             } .catch{
                 self.showAlert(error: true, withMessage: $0.localizedDescription, completion: nil)
@@ -217,7 +216,7 @@ class NewTeamViewController: UIViewController, UIImagePickerControllerDelegate, 
      present(picker, animated: true, completion: nil)
      }
      else{
-     self.showAlert(withMessage: "Application can not access photo library.")
+     self.showAlert(withMessage: NSLocalizedString("Application can not access photo library.", comment: ""))
      }
      }
     

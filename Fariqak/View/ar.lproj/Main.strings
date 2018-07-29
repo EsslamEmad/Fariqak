@@ -1,1 +1,549 @@
 
+/* Class = "UIButton"; normalTitle = "Outgoing Invitations"; ObjectID = "03o-Vr-UVz"; */
+"03o-Vr-UVz.normalTitle" = "الدعوات المرسلة";
+
+/* Class = "UIViewController"; title = "Team"; ObjectID = "0Iw-XZ-v5L"; */
+"0Iw-XZ-v5L.title" = "فريق";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "0xQ-MM-v6b"; */
+"0xQ-MM-v6b.text" = "قسم";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "0xr-Sd-NSl"; */
+"0xr-Sd-NSl.text" = "3";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "1fl-Zw-YaW"; */
+"1fl-Zw-YaW.text" = "الوصف";
+
+/* Class = "UILabel"; text = "7"; ObjectID = "1sz-dY-MMb"; */
+"1sz-dY-MMb.text" = "7";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "20s-t8-ybp"; */
+"20s-t8-ybp.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "2B3-gG-jan"; */
+"2B3-gG-jan.normalTitle" = "تواصل معنا";
+
+/* Class = "UILabel"; text = "9"; ObjectID = "2b1-sn-zsm"; */
+"2b1-sn-zsm.text" = "9";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Co-cb-zhH"; */
+"3Co-cb-zhH.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "11"; ObjectID = "3NQ-AD-aht"; */
+"3NQ-AD-aht.text" = "11";
+
+/* Class = "UIViewController"; title = "Chat"; ObjectID = "4K6-D6-UCO"; */
+"4K6-D6-UCO.title" = "الدردشة";
+
+/* Class = "UILabel"; text = "11"; ObjectID = "4MI-06-1Al"; */
+"4MI-06-1Al.text" = "11";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "4VE-4b-oYL"; */
+"4VE-4b-oYL.text" = "5";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "4yn-h8-Fio"; */
+"4yn-h8-Fio.text" = "6";
+
+/* Class = "UIButton"; normalTitle = "Reserve"; ObjectID = "5BB-n4-zqd"; */
+"5BB-n4-zqd.normalTitle" = "حجز";
+
+/* Class = "UIButton"; normalTitle = "All Playgrounds"; ObjectID = "5cZ-lw-6er"; */
+"5cZ-lw-6er.normalTitle" = "كل الملاعب";
+
+/* Class = "UITableViewController"; title = "My Teams"; ObjectID = "5jR-hD-hHA"; */
+"5jR-hD-hHA.title" = "فريقي";
+
+/* Class = "UITableViewController"; title = "Playgrounds"; ObjectID = "6Xg-QL-Aig"; */
+"6Xg-QL-Aig.title" = "الملاعب";
+
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "6Zs-Zj-0e2"; */
+"6Zs-Zj-0e2.normalTitle" = "اللغة";
+
+/* Class = "UIButton"; normalTitle = "My Playgrounds Reservations"; ObjectID = "6rz-hi-NzI"; */
+"6rz-hi-NzI.normalTitle" = "حجوزات ملاعبي";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "7wd-zc-2V7"; */
+"7wd-zc-2V7.text" = "السعر:";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "7xn-rg-Aip"; */
+"7xn-rg-Aip.text" = "10";
+
+/* Class = "UIButton"; normalTitle = "Choose the starting hour"; ObjectID = "8FS-Sv-bJn"; */
+"8FS-Sv-bJn.normalTitle" = "إختر ساعة البداية";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "8IM-5C-OVH"; */
+"8IM-5C-OVH.title" = "رجوع";
+
+/* Class = "UIButton"; normalTitle = "Reserve"; ObjectID = "8Kk-AH-NLf"; */
+"8Kk-AH-NLf.normalTitle" = "حجز";
+
+/* Class = "UIButton"; normalTitle = "Products"; ObjectID = "8MJ-u9-4pV"; */
+"8MJ-u9-4pV.normalTitle" = "المنتجات";
+
+/* Class = "UINavigationItem"; title = "My Profile"; ObjectID = "8OD-FO-RKY"; */
+"8OD-FO-RKY.title" = "ملفي الشخصي";
+
+/* Class = "UILabel"; text = "Choose a player"; ObjectID = "8cB-Sq-fxp"; */
+"8cB-Sq-fxp.text" = "إختر لاعب";
+
+/* Class = "UITableViewController"; title = "Save Order"; ObjectID = "96g-cE-VOE"; */
+"96g-cE-VOE.title" = "حفظ الطلب";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9hn-L8-1cC"; */
+"9hn-L8-1cC.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "9iF-Dw-4QH"; */
+"9iF-Dw-4QH.text" = "الإسم";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "AjM-8b-snW"; */
+"AjM-8b-snW.normalTitle" = "تعديل";
+
+/* Class = "UIButton"; normalTitle = "New Playground"; ObjectID = "BPw-xG-qJa"; */
+"BPw-xG-qJa.normalTitle" = "ملعب جديد";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "Bms-K6-TvP"; */
+"Bms-K6-TvP.normalTitle" = "تم";
+
+/* Class = "UIButton"; normalTitle = "Save Order"; ObjectID = "BtP-Ho-GBF"; */
+"BtP-Ho-GBF.normalTitle" = "حفظ الطلب";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "CHb-mG-Vzv"; */
+"CHb-mG-Vzv.text" = "4";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CTE-yh-sHA"; */
+"CTE-yh-sHA.text" = "Label";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "Cet-bS-STC"; */
+"Cet-bS-STC.text" = "السعر";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D9A-by-0rO"; */
+"D9A-by-0rO.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "EiC-hu-hOI"; */
+"EiC-hu-hOI.text" = "الإسم";
+
+/* Class = "UILabel"; text = "000 S.R"; ObjectID = "EqL-Ke-aHP"; */
+"EqL-Ke-aHP.text" = "000 S.R";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "FEf-0r-tSW"; */
+"FEf-0r-tSW.text" = "2";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "FQ1-JI-xHE"; */
+"FQ1-JI-xHE.text" = "الوصف";
+
+/* Class = "UITableViewController"; title = "Order"; ObjectID = "FQ9-Sp-QPj"; */
+"FQ9-Sp-QPj.title" = "الطلب";
+
+/* Class = "UIButton"; normalTitle = "My Profile"; ObjectID = "FUc-Ha-Hkp"; */
+"FUc-Ha-Hkp.normalTitle" = "ملفي الشخصي";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Fvi-Ve-Ho3"; */
+"Fvi-Ve-Ho3.text" = "الإسم";
+
+/* Class = "UIButton"; normalTitle = "Remove Player"; ObjectID = "FxD-3O-CiW"; */
+"FxD-3O-CiW.normalTitle" = "إحذف اللاعب";
+
+/* Class = "UILabel"; text = "Teams"; ObjectID = "G1h-Kq-nFK"; */
+"G1h-Kq-nFK.text" = "الفرق";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "GQK-od-AG5"; */
+"GQK-od-AG5.text" = "السعر:";
+
+/* Class = "UILabel"; text = "Ending hour"; ObjectID = "GeO-No-Oog"; */
+"GeO-No-Oog.text" = "ساعة النهاية";
+
+/* Class = "UIViewController"; title = "Shopping Cart"; ObjectID = "GeT-Hh-HZW"; */
+"GeT-Hh-HZW.title" = "سلة التسوق";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "GjF-Wy-OIY"; */
+"GjF-Wy-OIY.text" = "1";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Ifz-30-QJO"; */
+"Ifz-30-QJO.text" = "الإسم";
+
+/* Class = "UICollectionViewController"; title = "Categories"; ObjectID = "IxG-yE-wDX"; */
+"IxG-yE-wDX.title" = "الأقسام";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "J31-oQ-eYJ"; */
+"J31-oQ-eYJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "JF0-bF-e8X"; */
+"JF0-bF-e8X.text" = "العنوان:";
+
+/* Class = "UILabel"; text = "No Conversations Found"; ObjectID = "JPa-QF-9Uw"; */
+"JPa-QF-9Uw.text" = "لا توجد محادثات";
+
+/* Class = "UIButton"; normalTitle = "Chat"; ObjectID = "JRp-Mm-OIM"; */
+"JRp-Mm-OIM.normalTitle" = "الدردشة";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "Jfo-eB-qzA"; */
+"Jfo-eB-qzA.text" = "6";
+
+/* Class = "UIButton"; normalTitle = "Bank Transfer"; ObjectID = "Jq9-uk-yeF"; */
+"Jq9-uk-yeF.normalTitle" = "تحويل بنكي";
+
+/* Class = "UIButton"; normalTitle = "Cash"; ObjectID = "KN0-sW-xj9"; */
+"KN0-sW-xj9.normalTitle" = "كاش";
+
+/* Class = "UILabel"; text = "6"; ObjectID = "KmR-ky-Iov"; */
+"KmR-ky-Iov.text" = "6";
+
+/* Class = "UIButton"; normalTitle = "All Teams"; ObjectID = "KpS-TE-9XR"; */
+"KpS-TE-9XR.normalTitle" = "كل الفرق";
+
+/* Class = "UILabel"; text = "Order Number:"; ObjectID = "L0c-iI-2fw"; */
+"L0c-iI-2fw.text" = "رقم الطلب:";
+
+/* Class = "UILabel"; text = "Search players"; ObjectID = "LwM-7q-Xbb"; */
+"LwM-7q-Xbb.text" = "إبحث عن اللاعبين";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "M27-jL-alo"; */
+"M27-jL-alo.text" = "1";
+
+/* Class = "UISearchBar"; MJh-dB-3jj.scopeButtonTitles[0] = "Title"; ObjectID = "MJh-dB-3jj"; */
+"MJh-dB-3jj.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; MJh-dB-3jj.scopeButtonTitles[1] = "Title"; ObjectID = "MJh-dB-3jj"; */
+"MJh-dB-3jj.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UILabel"; text = "7"; ObjectID = "MZ0-h5-2o7"; */
+"MZ0-h5-2o7.text" = "7";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "MaU-VU-low"; */
+"MaU-VU-low.text" = "10";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "OFf-sw-uPI"; */
+"OFf-sw-uPI.text" = "5";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "Ocz-Un-ZKU"; */
+"Ocz-Un-ZKU.normalTitle" = "تم";
+
+/* Class = "UIButton"; normalTitle = "All Playgrounds"; ObjectID = "PMa-ro-qpG"; */
+"PMa-ro-qpG.normalTitle" = "كل الملاعب";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "PrC-8G-XfW"; */
+"PrC-8G-XfW.text" = "الإسم";
+
+/* Class = "UIButton"; normalTitle = "Choose the ending hour"; ObjectID = "Q7a-2T-t2Z"; */
+"Q7a-2T-t2Z.normalTitle" = "إختر ساعة النهاية";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "QbD-t0-QUj"; */
+"QbD-t0-QUj.text" = "4";
+
+/* Class = "UILabel"; text = "date"; ObjectID = "Qof-HB-sXm"; */
+"Qof-HB-sXm.text" = "التاريخ";
+
+/* Class = "UILabel"; text = "Order Number:"; ObjectID = "R61-Vt-1Hj"; */
+"R61-Vt-1Hj.text" = "رقم الطلب:";
+
+/* Class = "UILabel"; text = "5"; ObjectID = "R7h-JA-sL1"; */
+"R7h-JA-sL1.text" = "5";
+
+/* Class = "UILabel"; text = "Choose Quantity"; ObjectID = "RPw-Z2-1BF"; */
+"RPw-Z2-1BF.text" = "إختر الكمية";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "RjD-v3-YE6"; */
+"RjD-v3-YE6.normalTitle" = "تعديل";
+
+/* Class = "UIButton"; normalTitle = "Shopping Cart"; ObjectID = "S0d-wN-kov"; */
+"S0d-wN-kov.normalTitle" = "سلة التسوق";
+
+/* Class = "UIButton"; normalTitle = "Choose the date"; ObjectID = "Sab-bx-ORx"; */
+"Sab-bx-ORx.normalTitle" = "إختر التاريخ";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Sad-PS-Rjh"; */
+"Sad-PS-Rjh.text" = "الإسم";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TgO-Tl-fh4"; */
+"TgO-Tl-fh4.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "TqU-XP-Vap"; */
+"TqU-XP-Vap.normalTitle" = "تسجيل الخروج";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "Tw5-Xz-dsR"; */
+"Tw5-Xz-dsR.normalTitle" = "بحث";
+
+/* Class = "UILabel"; text = "Status:"; ObjectID = "UDO-lb-qLe"; */
+"UDO-lb-qLe.text" = "الحالة:";
+
+/* Class = "UILabel"; text = "7"; ObjectID = "UPn-0a-sIc"; */
+"UPn-0a-sIc.text" = "7";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UeW-Ji-Pdz"; */
+"UeW-Ji-Pdz.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "My Playgrounds"; ObjectID = "Uzn-gH-JgV"; */
+"Uzn-gH-JgV.normalTitle" = "ملاعبي";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Vz3-SM-3gY"; */
+"Vz3-SM-3gY.text" = "الإيميل";
+
+/* Class = "UILabel"; text = "Team Name"; ObjectID = "W2T-r1-83k"; */
+"W2T-r1-83k.text" = "إسم الفريق";
+
+/* Class = "UILabel"; text = "Choose Quantity"; ObjectID = "WQx-U8-JaT"; */
+"WQx-U8-JaT.text" = "إختر الكمية";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "WSi-fW-eRU"; */
+"WSi-fW-eRU.normalTitle" = "تم";
+
+/* Class = "UIButton"; normalTitle = "Bank Transfer"; ObjectID = "We6-M5-ZKe"; */
+"We6-M5-ZKe.normalTitle" = "تحويل بنكي";
+
+/* Class = "UISearchBar"; placeholder = "Search playgrounds"; ObjectID = "WwI-4f-rBM"; */
+"WwI-4f-rBM.placeholder" = "إبحث عن الملاعب";
+
+/* Class = "UISearchBar"; WwI-4f-rBM.scopeButtonTitles[0] = "Title"; ObjectID = "WwI-4f-rBM"; */
+"WwI-4f-rBM.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; WwI-4f-rBM.scopeButtonTitles[1] = "Title"; ObjectID = "WwI-4f-rBM"; */
+"WwI-4f-rBM.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "XKP-CA-twC"; */
+"XKP-CA-twC.text" = "1";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "Xit-G8-nQF"; */
+"Xit-G8-nQF.text" = "3";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "YJl-UB-FE4"; */
+"YJl-UB-FE4.title" = "الرئيسية";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Yf6-OD-G8w"; */
+"Yf6-OD-G8w.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "9"; ObjectID = "Yrw-H7-38y"; */
+"Yrw-H7-38y.text" = "9";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZOC-T9-mgl"; */
+"ZOC-T9-mgl.text" = "Label";
+
+/* Class = "UILabel"; text = "ok"; ObjectID = "ZrP-4Y-tJ6"; */
+"ZrP-4Y-tJ6.text" = "حسناً";
+
+/* Class = "UIButton"; normalTitle = "My Playgrounds"; ObjectID = "aEt-VM-hpG"; */
+"aEt-VM-hpG.normalTitle" = "ملاعبي";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aKe-GI-FHN"; */
+"aKe-GI-FHN.text" = "Label";
+
+/* Class = "UILabel"; text = "Search players"; ObjectID = "cWI-xs-uKm"; */
+"cWI-xs-uKm.text" = "إبحث عن اللاعبين";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ckV-SO-gZq"; */
+"ckV-SO-gZq.text" = "الإسم";
+
+/* Class = "UILabel"; text = "Choose a player"; ObjectID = "csC-wc-YwB"; */
+"csC-wc-YwB.text" = "إختر لاعب";
+
+/* Class = "UILabel"; text = "123456"; ObjectID = "dA4-eO-yvP"; */
+"dA4-eO-yvP.text" = "123456";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "dBF-bc-Tai"; */
+"dBF-bc-Tai.title" = "القائمة";
+
+/* Class = "UILabel"; text = "Starting hour"; ObjectID = "dBK-km-HQl"; */
+"dBK-km-HQl.text" = "ساعة البداية";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "eS1-IN-gDP"; */
+"eS1-IN-gDP.normalTitle" = "إلغاء";
+
+/* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "efh-wL-hXZ"; */
+"efh-wL-hXZ.title" = "تعديل";
+
+/* Class = "UILabel"; text = "Please add a photo to prove the conversion"; ObjectID = "eyb-zv-x39"; */
+"eyb-zv-x39.text" = "من فضلك أضف صورة تثبت التحويل";
+
+/* Class = "UILabel"; text = "Teams"; ObjectID = "fED-Kc-VQB"; */
+"fED-Kc-VQB.text" = "الفرق";
+
+/* Class = "UILabel"; text = "Choose The Opposing Team"; ObjectID = "fmI-Oa-9ss"; */
+"fmI-Oa-9ss.text" = "إختر الفريق المنافس";
+
+/* Class = "UIButton"; normalTitle = "My Teams"; ObjectID = "fq6-tI-Ka5"; */
+"fq6-tI-Ka5.normalTitle" = "فريقي";
+
+/* Class = "UINavigationController"; title = "Profile"; ObjectID = "g7G-1Q-aZr"; */
+"g7G-1Q-aZr.title" = "الملف الشخصي";
+
+/* Class = "UILabel"; text = "Please add a photo to prove the conversion"; ObjectID = "gDc-7K-62E"; */
+"gDc-7K-62E.text" = "من فضلك أضف صورة تثبت التحويل";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gge-b4-5kt"; */
+"gge-b4-5kt.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Orders"; ObjectID = "gnk-fA-AIV"; */
+"gnk-fA-AIV.normalTitle" = "الطلبات";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "gxa-14-71y"; */
+"gxa-14-71y.text" = "المدينة";
+
+/* Class = "UILabel"; text = "11"; ObjectID = "h8d-Yg-y0m"; */
+"h8d-Yg-y0m.text" = "11";
+
+/* Class = "UILabel"; text = "Product"; ObjectID = "h8v-Ci-ogQ"; */
+"h8v-Ci-ogQ.text" = "المنتج";
+
+/* Class = "UITableViewController"; title = "Product"; ObjectID = "hS0-02-D4L"; */
+"hS0-02-D4L.title" = "المنتج";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hUg-TC-8jA"; */
+"hUg-TC-8jA.text" = "Label";
+
+/* Class = "UILabel"; text = "Choose the location"; ObjectID = "iTy-1m-lqH"; */
+"iTy-1m-lqH.text" = "إختر الموقع";
+
+/* Class = "UIButton"; normalTitle = "Add a Playground"; ObjectID = "iZd-ap-htg"; */
+"iZd-ap-htg.normalTitle" = "أضف ملعب";
+
+/* Class = "UIButton"; normalTitle = "Cash"; ObjectID = "ieC-5n-mv9"; */
+"ieC-5n-mv9.normalTitle" = "كاش";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "izH-T7-vLS"; */
+"izH-T7-vLS.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Type message..."; ObjectID = "j7W-yP-0D8"; */
+"j7W-yP-0D8.placeholder" = "الرسالة..";
+
+/* Class = "UILabel"; text = "S.R"; ObjectID = "j9M-Jf-7Qb"; */
+"j9M-Jf-7Qb.text" = "ر.س";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "jPv-WR-8YE"; */
+"jPv-WR-8YE.text" = "الإسم";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "jqB-5B-QQf"; */
+"jqB-5B-QQf.normalTitle" = "إلغاء";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "jug-uL-a5O"; */
+"jug-uL-a5O.normalTitle" = "بحث";
+
+/* Class = "UIButton"; normalTitle = "Notifications"; ObjectID = "k5D-QH-sMB"; */
+"k5D-QH-sMB.normalTitle" = "التنبيهات";
+
+/* Class = "UITableViewController"; title = "Reservations"; ObjectID = "kCs-Ev-Jkw"; */
+"kCs-Ev-Jkw.title" = "الحجوزات";
+
+/* Class = "UIButton"; normalTitle = "Reservations"; ObjectID = "kVz-J8-9be"; */
+"kVz-J8-9be.normalTitle" = "الحجوزات";
+
+/* Class = "UIButton"; normalTitle = "Notifications"; ObjectID = "l3R-ZZ-7Gi"; */
+"l3R-ZZ-7Gi.normalTitle" = "التنبيهات";
+
+/* Class = "UILabel"; text = "000 S.R"; ObjectID = "lll-8B-YII"; */
+"lll-8B-YII.text" = "000 S.R";
+
+/* Class = "UIViewController"; title = "New Team"; ObjectID = "m15-G1-MLx"; */
+"m15-G1-MLx.title" = "فريق جديد";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "mck-P8-fkR"; */
+"mck-P8-fkR.text" = "2";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "mkP-bL-Kzd"; */
+"mkP-bL-Kzd.text" = "2";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "n4h-cg-hrb"; */
+"n4h-cg-hrb.text" = "3";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ncj-uI-cbf"; */
+"ncj-uI-cbf.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Add To Cart"; ObjectID = "nof-ht-0JW"; */
+"nof-ht-0JW.normalTitle" = "أضف إلى السلة";
+
+/* Class = "UILabel"; text = "date"; ObjectID = "pVl-q8-gy8"; */
+"pVl-q8-gy8.text" = "التاريخ";
+
+/* Class = "UILabel"; text = "no"; ObjectID = "qH2-05-80k"; */
+"qH2-05-80k.text" = "لا";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "qTk-lW-Wb0"; */
+"qTk-lW-Wb0.text" = "العنوان";
+
+/* Class = "UILabel"; text = "000"; ObjectID = "qXg-Qv-EFE"; */
+"qXg-Qv-EFE.text" = "000";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "qnD-7t-slj"; */
+"qnD-7t-slj.text" = "4";
+
+/* Class = "UILabel"; text = "000 S.R"; ObjectID = "rtq-VN-xfd"; */
+"rtq-VN-xfd.text" = "000 S.R";
+
+/* Class = "UILabel"; text = "8"; ObjectID = "ry2-Zg-4Td"; */
+"ry2-Zg-4Td.text" = "8";
+
+/* Class = "UIButton"; normalTitle = "Incoming Invitations"; ObjectID = "s1Z-rG-l2Y"; */
+"s1Z-rG-l2Y.normalTitle" = "الدعوات القادمة";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "sjb-Nu-H63"; */
+"sjb-Nu-H63.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "tGn-6I-eiA"; */
+"tGn-6I-eiA.text" = "الإسم";
+
+/* Class = "UIButton"; normalTitle = "Save Order"; ObjectID = "tpN-ql-0tT"; */
+"tpN-ql-0tT.normalTitle" = "إحفظ الطلب";
+
+/* Class = "UILabel"; text = "Details:"; ObjectID = "uCa-5D-0nt"; */
+"uCa-5D-0nt.text" = "التفاصيل:";
+
+/* Class = "UILabel"; text = "000 S.R"; ObjectID = "uQF-J2-H3m"; */
+"uQF-J2-H3m.text" = "000 S.R";
+
+/* Class = "UISearchBar"; ubl-rT-gb7.scopeButtonTitles[0] = "Title"; ObjectID = "ubl-rT-gb7"; */
+"ubl-rT-gb7.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; ubl-rT-gb7.scopeButtonTitles[1] = "Title"; ObjectID = "ubl-rT-gb7"; */
+"ubl-rT-gb7.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "unS-zl-cjD"; */
+"unS-zl-cjD.text" = "Label";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "vAb-0B-j5E"; */
+"vAb-0B-j5E.text" = "العنوان:";
+
+/* Class = "UILabel"; text = "Details:"; ObjectID = "vIt-tc-WCf"; */
+"vIt-tc-WCf.text" = "التفاصيل:";
+
+/* Class = "UICollectionViewController"; title = "Products"; ObjectID = "vXz-rU-iWY"; */
+"vXz-rU-iWY.title" = "المنتجات";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "val-6a-DXD"; */
+"val-6a-DXD.text" = "Label";
+
+/* Class = "UILabel"; text = "000 S.R"; ObjectID = "vp3-TM-dyf"; */
+"vp3-TM-dyf.text" = "000 S.R";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "w3P-Qj-lcl"; */
+"w3P-Qj-lcl.normalTitle" = "إلغاء";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "w8K-2K-V3v"; */
+"w8K-2K-V3v.text" = "التاريخ";
+
+/* Class = "UIButton"; normalTitle = "New Team"; ObjectID = "wGy-WE-L9c"; */
+"wGy-WE-L9c.normalTitle" = "فريق جديد";
+
+/* Class = "UITableViewController"; title = "Orders"; ObjectID = "wmH-9Z-UiU"; */
+"wmH-9Z-UiU.title" = "الطلبات";
+
+/* Class = "UITableViewController"; title = "Reservation"; ObjectID = "wyA-Az-ode"; */
+"wyA-Az-ode.title" = "الحجوزات";
+
+/* Class = "UILabel"; text = "8"; ObjectID = "xIU-Fa-K4G"; */
+"xIU-Fa-K4G.text" = "8";
+
+/* Class = "UILabel"; text = "Status:"; ObjectID = "xuh-zY-fen"; */
+"xuh-zY-fen.text" = "الحالة:";
+
+/* Class = "UILabel"; text = "9"; ObjectID = "yfu-Is-wIL"; */
+"yfu-Is-wIL.text" = "9";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "z2v-eF-C9F"; */
+"z2v-eF-C9F.normalTitle" = "تم";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "zi7-k3-MbL"; */
+"zi7-k3-MbL.text" = "10";
+
+/* Class = "UILabel"; text = "8"; ObjectID = "znd-X7-I9f"; */
+"znd-X7-I9f.text" = "8";
+
+/* Class = "UILabel"; text = "Choose Your Team"; ObjectID = "zsJ-Vp-Ou9"; */
+"zsJ-Vp-Ou9.text" = "إختر فريقك";

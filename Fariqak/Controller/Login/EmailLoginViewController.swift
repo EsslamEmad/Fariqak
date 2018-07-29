@@ -37,10 +37,11 @@ class EmailLoginViewController: UIViewController {
             if let error = error {
                 
                 self.showAlert(withMessage: error.localizedDescription)
+                SVProgressHUD.dismiss()
                 return
             }
             
-           // self.showAlert(withMessage: "Signed In as \(user?.uid, user?.email)")
+           
             firstly{
                 return API.CallApi(APIRequests.getUser(id: (user?.uid)!))
                 } .done{ resp in

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nue-RT-H8U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nue-RT-H8U">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,7 +52,7 @@
                                 <rect key="frame" x="41.333333333333343" y="436.66666666666669" width="331.33333333333326" height="201.66666666666669"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vP1-bq-JmW" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="331.33333333333331" height="57.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331.33333333333331" height="57.333333333333336"/>
                                         <color key="backgroundColor" red="0.76230569950000004" green="0.061193969430000002" blue="0.053738174069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Login via email" image="email">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,8 +79,8 @@
                                             <segue destination="BMF-C5-yJm" kind="show" id="UBx-T7-dne"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0d-FS-p98" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72.666666666666686" width="331.33333333333331" height="57.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0d-FS-p98" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72.333333333333314" width="331.33333333333331" height="57.333333333333343"/>
                                         <color key="backgroundColor" red="0.0" green="0.34754103058995472" blue="0.72986156088082899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Login via Facebook" image="Facebook">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -107,8 +107,8 @@
                                             <action selector="FacebookSignIn:" destination="hVB-ue-PXp" eventType="touchUpInside" id="g5Z-vD-dmu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv1-W0-ygK" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="144.99999999999994" width="331.33333333333331" height="56.666666666666657"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv1-W0-ygK" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144.66666666666669" width="331.33333333333331" height="57"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Login via Google" image="Google">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -175,7 +175,7 @@
                                 <rect key="frame" x="20.666666666666657" y="16.666666666666671" width="372.66666666666674" height="134.66666666666663"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-Zx-mOg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="62.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="62.333333333333336"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
@@ -195,7 +195,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6h-3i-pyL" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="0.0" y="72.666666666666671" width="372.66666666666669" height="62.000000000000014"/>
+                                        <rect key="frame" x="0.0" y="72.333333333333329" width="372.66666666666669" height="62.333333333333329"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -220,10 +220,9 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRQ-A6-cNm" customClass="FariqakButton" customModule="Fariqak" customModuleProvider="target">
-                                <rect key="frame" x="248.33333333333334" y="196" width="124.33333333333334" height="45"/>
+                                <rect key="frame" x="176" y="198" width="207" height="42"/>
                                 <color key="backgroundColor" red="0.0043499019749999998" green="0.56620385360000003" blue="0.0067512392029999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="tintColor" red="0.9595858813" green="0.95808586250000005" blue="0.98428745360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.9595858813" green="0.95808586250000005" blue="0.98428745360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -262,10 +261,10 @@
                         <constraints>
                             <constraint firstItem="flx-5a-NWD" firstAttribute="width" secondItem="etM-5p-2Ub" secondAttribute="width" multiplier="0.9" id="29S-9M-J30"/>
                             <constraint firstItem="flx-5a-NWD" firstAttribute="centerX" secondItem="etM-5p-2Ub" secondAttribute="centerX" id="2tr-OA-JnC"/>
-                            <constraint firstItem="cRQ-A6-cNm" firstAttribute="width" secondItem="etM-5p-2Ub" secondAttribute="width" multiplier="0.3" id="HJS-Vd-z7u"/>
+                            <constraint firstItem="cRQ-A6-cNm" firstAttribute="width" secondItem="etM-5p-2Ub" secondAttribute="width" multiplier="0.5" id="HJS-Vd-z7u"/>
                             <constraint firstItem="rKI-jI-TVo" firstAttribute="centerX" secondItem="etM-5p-2Ub" secondAttribute="centerX" id="Kg5-bj-Nbo"/>
                             <constraint firstItem="flx-5a-NWD" firstAttribute="height" secondItem="etM-5p-2Ub" secondAttribute="height" multiplier="0.2" id="LK6-qn-foI"/>
-                            <constraint firstItem="cRQ-A6-cNm" firstAttribute="centerX" secondItem="etM-5p-2Ub" secondAttribute="centerX" multiplier="1.5" id="Pkb-jX-MNP"/>
+                            <constraint firstItem="cRQ-A6-cNm" firstAttribute="centerX" secondItem="etM-5p-2Ub" secondAttribute="centerX" multiplier="1.35" id="Pkb-jX-MNP"/>
                             <constraint firstItem="rKI-jI-TVo" firstAttribute="centerY" secondItem="etM-5p-2Ub" secondAttribute="centerY" id="dvL-h6-Ldo"/>
                             <constraint firstItem="cRQ-A6-cNm" firstAttribute="centerY" secondItem="etM-5p-2Ub" secondAttribute="centerY" multiplier="0.65" id="pzl-dG-kW7"/>
                             <constraint firstItem="flx-5a-NWD" firstAttribute="centerY" secondItem="etM-5p-2Ub" secondAttribute="centerY" multiplier="0.25" id="uAG-eE-g2u"/>
@@ -293,7 +292,7 @@
                                 <rect key="frame" x="20.666666666666657" y="33.666666666666686" width="372.66666666666674" height="336"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2V-ks-s6h" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="79"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="78.666666666666671"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
@@ -313,7 +312,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K12-aJ-hdf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                        <rect key="frame" x="0.0" y="129" width="372.66666666666669" height="78.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="128.66666666666669" width="372.66666666666669" height="78.666666666666686"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
@@ -518,7 +517,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02b-tu-sqE" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                    <rect key="frame" x="35" y="18.666666666666671" width="344" height="55"/>
+                                                    <rect key="frame" x="35" y="18.666666666666668" width="344" height="54.666666666666657"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>

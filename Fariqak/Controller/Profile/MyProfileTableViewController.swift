@@ -20,6 +20,7 @@ class MyProfileTableViewController: UITableViewController {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBOutlet weak var chatButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -27,13 +28,20 @@ class MyProfileTableViewController: UITableViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+        if !myProfile, user.id == APIAuth.auth.user?.id{
+            myProfile = true
+        }
         if myProfile{
             self.user = APIAuth.auth.user
+            chatButton.alpha = 0
         } else {
             editButton.isEnabled = false
             editButton.title = ""
-            
+            chatButton.layer.cornerRadius = chatButton.bounds.width / 2.0
+            self.title = self.user.username
         }
+        
+        
         if let imgurl = URL(string: user.photos){
             photo.kf.indicatorType = .activity
             photo.kf.setImage(with: imgurl, options: [.transition(.fade(0.2))])
@@ -57,7 +65,7 @@ class MyProfileTableViewController: UITableViewController {
             }
         }
         else{
-            cityLabel.text = "Unknown City"
+            cityLabel.text = NSLocalizedString("Unknown City", comment: "")
         }
         
         
@@ -79,8 +87,16 @@ class MyProfileTableViewController: UITableViewController {
                 destination.playerTeams = true
             }
             destination.user = self.user
+        } else if segue.identifier == "Chat"{
+            var arr = [APIAuth.auth.user!.id, self.user.id]
+            arr.sort{Int($0)! < Int($1)!}
+            let destination = segue.destination as! ChatVC
+            destination.currentUser = self.user
+            destination.conversationID = "\(arr[0])_@@_\(arr[1])"
         }
     }
+    
+    
 
     // MARK: - Table view data source
 
